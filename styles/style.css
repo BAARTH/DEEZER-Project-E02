@@ -215,22 +215,23 @@ input[type=text] {
 
 }
 
+.album-button-hover:hover button{
+	opacity: 1;
+
+}
+
 .nouv-image-titre{
     float: left;
 }
 
-#nouv-pop, #nouv-rock{
+.nouv-albums {
     clear: both;
     float: left;
 }
 
 .nouv-image-titre p{
     padding-left: 12%;
-    font-family: Arial; 
-    
-    
-    
-    
+    font-family: Arial;  
 }
 
 .nouv-image-titre p:first-of-type {
@@ -255,7 +256,16 @@ input[type=text] {
 	top:50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	background: none;
+	border: none;
+	background-image: url(../images/icon/play.png);
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 30px;
+	opacity: 0;
+	transition: all 500ms;
 }
+
 
 /* RIGHT BAR */
 
