@@ -2,9 +2,6 @@ $(document).ready(function () {
 
 
 	$("#user-interface").hide();
-
-
-
 	$("#user-button").click(
 		function () {
 			$("#user-interface").slideToggle();
@@ -31,6 +28,9 @@ $(document).ready(function () {
 				width: boxWidth
 			});
 		}
+	});
+	audiojs.events.ready(function () {
+		var as = audiojs.createAll();
 	});
 
 

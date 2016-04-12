@@ -14,9 +14,15 @@
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="styles/style.css" />
 	<!-- Css mise en forme -->
+	<script>
+		audiojs.events.ready(function () {
+			audiojs.createAll();
+		});
+	</script>
 </head>
 
 <body>
+
 	<div id="nav-bar">
 		<div id="deezer-logo">
             <img src="images/Deezer_logo.png" alt="logo"></img>
@@ -49,11 +55,13 @@
 
 	<div id="right-bar"></div>
 
-	<div id="play-bar"><a href="#" id="toggleButton-right"><i class="fa fa-list"></i></a>
+	<div id="play-bar">
 
+		<a href="#" id="toggleButton-right"><i class="fa fa-list"></i></a>
 
-	<script src="scripts/jquery-2.2.1.min.js"></script>
-	<script src="scripts/main.js"></script>
+		<script src="audiojs/audio.min.js"></script>
+		<script src="scripts/jquery-2.2.1.min.js"></script>
+		<script src="scripts/main.js"></script>
 </body>
 
 </html>
