@@ -199,10 +199,20 @@ input[type=text] {
 
 #nouveautes-content{
     padding-left: 3%;
+    padding-bottom: 5%;
 }
 
 .nouv-album{
     height: 200px;
+    transition: all .2s ease-in-out;
+}
+
+.album-button-hover:hover img {
+	transform: scale(1.1);
+	-webkit-filter: blur(1px); /* Chrome, Safari, Opera */
+    filter: blur(1px);
+    cursor: pointer;
+
 }
 
 .nouv-image-titre{
@@ -234,6 +244,17 @@ input[type=text] {
     font-size: 12px;
     margin-top: -8px;
     font-weight: 700;
+}
+
+.album-button-hover{
+	position: relative;
+}
+
+.button-album{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 /* RIGHT BAR */
