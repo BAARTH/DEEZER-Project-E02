@@ -14,18 +14,25 @@
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="styles/style.css" />
 	<!-- Css mise en forme -->
+	<script>
+		audiojs.events.ready(function () {
+			audiojs.createAll();
+		});
+	</script>
 </head>
 
 <body>
+
 	<div id="nav-bar">
 		<div id="deezer-logo">
-            <img src="images/Deezer_logo.png" alt="logo"></img>
+			<img src="images/Deezer_logo.png" alt="logo" />
 		</div>
 		<div class="bar-recherche">
-		    <form>
-                <span><input type="text" class="rechercher" placeholder="Rechercher"></span>
-		    </form>
-        </div>
+			<form>
+				<input type="text" class="rechercher" placeholder="Rechercher">
+				<input id="search-button" type="submit" name="search" value="" />
+			</form>
+		</div>
 		<ul id="menu">
 			<li>Accueil</li>
 			<li>A écouter</li>
@@ -35,7 +42,7 @@
 			<li>Mix</li>
 			<li>Ambiances</li>
 		</ul>
-		<h2>User</h2>
+		<div id="container-user"><img id="user-profile" alt="user" src="images/user-profile.png" /></div>
 		<a href="#" id="user-button"><i class="fa fa-angle-down"></i></a>
 		<ul id="user-interface">
 			<li>Profil</li>
@@ -47,36 +54,353 @@
 		</ul>
 	</div>
 	
-	<div id="div-nouveautes">
-        <div id="img-nouveaute">
-            <h2 class="col-md-2 col-sm-offset-1">Nouveautés</h2>
-        </div>
-            <div id="nouveautes-content">
-                
-                <div id="new-content-pop">
-                    <h3 class="col-sm-offset-1">POP</h3>
-                    <img class="nouv-new-album" id="new-coldplay" src="images/coldplay.png">
-                    <img class="nouv-new-album" id="new-emily" src="images/TheyMovedInShadow.png">
-                    <img class="nouv-new-album" id="tegan" src="images/U-TURN.png">
-                    <img class="nouv-new-album" id="hooverphonic" src="images/hooverphonic.png">
+	<div id="contenu-nouveautes">
+        <header>
+            <h2>Nouveautés</h2>
+        </header>
+        <div id="nouveautes-content">
+            <h3>POP</h3>
+            <div id="nouv-pop">
+                <div class="nouv-image-titre">
+                    <img class="nouv-album" src="images/POP/coldplay.png">
+                    <p>Coldplay</p>
+                    <p>A Head Full Of Dreams</p>
                 </div>
-                <div id="new-content-rock">
-                    <h3 class="col-sm-offset-1">ROCK</h3>
-                    <img class="nouv-new-album" id="crazy-eyes" src="images/Filter-Crazy-Eyes.png">
-                    <img class="nouv-new-album" id="placebo" src="images/placebo-meds.png">
-                    <img class="nouv-new-album" id="elizabear" src="images/eliza-and-the-bear.png">
-                    <img class="nouv-new-album" id="strangeweather" src="images/Nouveautes/Rock/deardarkhead-strangewheather.png">
+                <div class="nouv-image-titre">
+                    <img class="nouv-album" src="images/POP/TheyMovedInShadow.png">
+                    <p>Coldplay</p>
+                    <p>A Head Full Of Dreams</p>
+                </div>   
+                <div class="nouv-image-titre"> 
+                    <img class="nouv-album" src="images/POP/U-TURN.png">
+                    <p>Coldplay</p>
+                    <p>A Head Full Of Dreams</p>
+                </div>
+                <div class="nouv-image-titre">
+                    <img class="nouv-album" src="images/POP/hooverphonic.png">
+                    <p>Coldplay</p>
+                    <p>A Head Full Of Dreams</p>
+                </div>
+            </div>
+            <div id="nouv-rock">
+                <h3>ROCK</h3>
+                <div class="nouv-image-titre">
+                    <img class="nouv-album" src="images/ROCK/Filter-Crazy-Eyes.png">
+                    <p>Coldplay</p>
+                    <p>A Head Full Of Dreams</p>
+                </div>
+                <div class="nouv-image-titre">
+                    <img class="nouv-album" src="images/ROCK/placebo-meds.png">
+                    <p>Coldplay</p>
+                    <p>A Head Full Of Dreams</p>
+                </div>
+                <div class="nouv-image-titre">
+                    <img class="nouv-album" src="images/ROCK/eliza-and-the-bear.png">
+                    <p>Coldplay</p>
+                    <p>A Head Full Of Dreams</p>
+                </div>
+                <div class="nouv-image-titre">
+                    <img class="nouv-album" src="images/ROCK/deardarkhead-strangewheather.png">
+                    <p>Coldplay</p>
+                    <p>A Head Full Of Dreams</p>
+                </div>
+            </div>
+            <div id="nouv-rock">
+                <h3>ROCK</h3>
+                <div class="nouv-image-titre">
+                    <img class="nouv-album" src="images/ROCK/Filter-Crazy-Eyes.png">
+                    <p>Coldplay</p>
+                    <p>A Head Full Of Dreams</p>
+                </div>
+                <div class="nouv-image-titre">
+                    <img class="nouv-album" src="images/ROCK/placebo-meds.png">
+                    <p>Coldplay</p>
+                    <p>A Head Full Of Dreams</p>
+                </div>
+                <div class="nouv-image-titre">
+                    <img class="nouv-album" src="images/ROCK/eliza-and-the-bear.png">
+                    <p>Coldplay</p>
+                    <p>A Head Full Of Dreams</p>
+                </div>
+                <div class="nouv-image-titre">
+                    <img class="nouv-album" src="images/ROCK/deardarkhead-strangewheather.png">
+                    <p>Coldplay</p>
+                    <p>A Head Full Of Dreams</p>
+                </div>
+            </div>
+            <div id="nouv-rock">
+                <h3>ROCK</h3>
+                <div class="nouv-image-titre">
+                    <img class="nouv-album" src="images/ROCK/Filter-Crazy-Eyes.png">
+                    <p>Coldplay</p>
+                    <p>A Head Full Of Dreams</p>
+                </div>
+                <div class="nouv-image-titre">
+                    <img class="nouv-album" src="images/ROCK/placebo-meds.png">
+                    <p>Coldplay</p>
+                    <p>A Head Full Of Dreams</p>
+                </div>
+                <div class="nouv-image-titre">
+                    <img class="nouv-album" src="images/ROCK/eliza-and-the-bear.png">
+                    <p>Coldplay</p>
+                    <p>A Head Full Of Dreams</p>
+                </div>
+                <div class="nouv-image-titre">
+                    <img class="nouv-album" src="images/ROCK/deardarkhead-strangewheather.png">
+                    <p>Coldplay</p>
+                    <p>A Head Full Of Dreams</p>
+                </div>
+            </div>
+            <div id="nouv-rock">
+                <h3>ROCK</h3>
+                <div class="nouv-image-titre">
+                    <img class="nouv-album" src="images/ROCK/Filter-Crazy-Eyes.png">
+                    <p>Coldplay</p>
+                    <p>A Head Full Of Dreams</p>
+                </div>
+                <div class="nouv-image-titre">
+                    <img class="nouv-album" src="images/ROCK/placebo-meds.png">
+                    <p>Coldplay</p>
+                    <p>A Head Full Of Dreams</p>
+                </div>
+                <div class="nouv-image-titre">
+                    <img class="nouv-album" src="images/ROCK/eliza-and-the-bear.png">
+                    <p>Coldplay</p>
+                    <p>A Head Full Of Dreams</p>
+                </div>
+                <div class="nouv-image-titre">
+                    <img class="nouv-album" src="images/ROCK/deardarkhead-strangewheather.png">
+                    <p>Coldplay</p>
+                    <p>A Head Full Of Dreams</p>
+                </div>
+            </div>
+            <div id="nouv-rock">
+                <h3>ROCK</h3>
+                <div class="nouv-image-titre">
+                    <img class="nouv-album" src="images/ROCK/Filter-Crazy-Eyes.png">
+                    <p>Coldplay</p>
+                    <p>A Head Full Of Dreams</p>
+                </div>
+                <div class="nouv-image-titre">
+                    <img class="nouv-album" src="images/ROCK/placebo-meds.png">
+                    <p>Coldplay</p>
+                    <p>A Head Full Of Dreams</p>
+                </div>
+                <div class="nouv-image-titre">
+                    <img class="nouv-album" src="images/ROCK/eliza-and-the-bear.png">
+                    <p>Coldplay</p>
+                    <p>A Head Full Of Dreams</p>
+                </div>
+                <div class="nouv-image-titre">
+                    <img class="nouv-album" src="images/ROCK/deardarkhead-strangewheather.png">
+                    <p>Coldplay</p>
+                    <p>A Head Full Of Dreams</p>
                 </div>
             </div>
 	</div>
+    <!--
+	<div id="right-bar">
+		<div class="tab">
 
-	<div id="right-bar"></div>
+			<ul class="tabs">
+				<li><a href="#">Playlist</a></li>
+				<li><a href="#">Historique</a></li>
+				<li><a href="#">Activités</a></li>
+			</ul>
+			
+			<!-- / tabs -->
 
-	<div id="play-bar"><a href="#" id="toggleButton-right"><i class="fa fa-list"></i></a>
 
 
-	<script src="scripts/jquery-2.2.1.min.js"></script>
-	<script src="scripts/main.js"></script>
+            <!--
+			<div class="tab_content">
+
+				<div class="tabs_item">
+					<div class="container_playlist">
+						<ul class="acc">
+							<li>
+								<button class="acc_ctrl">
+									<h2>Chill</h2></button>
+								<div class="acc_panel">
+									<div class="track">
+										<img src="https://cdns-images.dzcdn.net/images/cover/2e018122cb56986277102d2041a592c8/120x120-000000-80-0-0.jpg">
+										<span class="title">Discovery</span></br>
+										<span class="artist">Daft Punk</span>
+									</div>
+									<div class="track">
+										<img src="https://cdns-images.dzcdn.net/images/cover/2e018122cb56986277102d2041a592c8/120x120-000000-80-0-0.jpg">
+										<span class="title">Discovery</span></br>
+										<span class="artist">Daft Punk</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<button class="acc_ctrl">
+									<h2>House</h2></button>
+								<div class="acc_panel">
+									<div class="track">
+										<img src="https://cdns-images.dzcdn.net/images/cover/2e018122cb56986277102d2041a592c8/120x120-000000-80-0-0.jpg">
+										<span class="title">Discovery</span></br>
+										<span class="artist">Daft Punk</span>
+									</div>
+									<div class="track">
+										<img src="https://cdns-images.dzcdn.net/images/cover/2e018122cb56986277102d2041a592c8/120x120-000000-80-0-0.jpg">
+										<span class="title">Discovery</span></br>
+										<span class="artist">Daft Punk</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<button class="acc_ctrl">
+									<h2>Deep</h2></button>
+								<div class="acc_panel">
+									<div class="track">
+										<img src="https://cdns-images.dzcdn.net/images/cover/2e018122cb56986277102d2041a592c8/120x120-000000-80-0-0.jpg">
+										<span class="title">Discovery</span></br>
+										<span class="artist">Daft Punk</span>
+									</div>
+									<div class="track">
+										<img src="https://cdns-images.dzcdn.net/images/cover/2e018122cb56986277102d2041a592c8/120x120-000000-80-0-0.jpg">
+										<span class="title">Discovery</span></br>
+										<span class="artist">Daft Punk</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+				<!-- / tabs_item -->
+
+				<div class="tabs_item">
+					<div class="container_playlist">
+						<ul class="acc">
+							<li>
+								<button class="acc_ctrl">
+									<h2>Chill</h2></button>
+								<div class="acc_panel">
+									<div class="track">
+										<img src="https://cdns-images.dzcdn.net/images/cover/2e018122cb56986277102d2041a592c8/120x120-000000-80-0-0.jpg">
+										<span class="title">Discovery</span></br>
+										<span class="artist">Daft Punk</span>
+									</div>
+									<div class="track">
+										<img src="https://cdns-images.dzcdn.net/images/cover/2e018122cb56986277102d2041a592c8/120x120-000000-80-0-0.jpg">
+										<span class="title">Discovery</span></br>
+										<span class="artist">Daft Punk</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<button class="acc_ctrl">
+									<h2>House</h2></button>
+								<div class="acc_panel">
+									<div class="track">
+										<img src="https://cdns-images.dzcdn.net/images/cover/2e018122cb56986277102d2041a592c8/120x120-000000-80-0-0.jpg">
+										<span class="title">Discovery</span></br>
+										<span class="artist">Daft Punk</span>
+									</div>
+									<div class="track">
+										<img src="https://cdns-images.dzcdn.net/images/cover/2e018122cb56986277102d2041a592c8/120x120-000000-80-0-0.jpg">
+										<span class="title">Discovery</span></br>
+										<span class="artist">Daft Punk</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<button class="acc_ctrl">
+									<h2>Deep</h2></button>
+								<div class="acc_panel">
+									<div class="track">
+										<img src="https://cdns-images.dzcdn.net/images/cover/2e018122cb56986277102d2041a592c8/120x120-000000-80-0-0.jpg">
+										<span class="title">Discovery</span></br>
+										<span class="artist">Daft Punk</span>
+									</div>
+									<div class="track">
+										<img src="https://cdns-images.dzcdn.net/images/cover/2e018122cb56986277102d2041a592c8/120x120-000000-80-0-0.jpg">
+										<span class="title">Discovery</span></br>
+										<span class="artist">Daft Punk</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+				<!-- / tabs_item -->
+
+				<div class="tabs_item">
+					<div class="container_playlist">
+						<ul class="acc">
+							<li>
+								<button class="acc_ctrl">
+									<h2>Chill</h2></button>
+								<div class="acc_panel">
+									<div class="track">
+										<img src="https://cdns-images.dzcdn.net/images/cover/2e018122cb56986277102d2041a592c8/120x120-000000-80-0-0.jpg">
+										<span class="title">Discovery</span></br>
+										<span class="artist">Daft Punk</span>
+									</div>
+									<div class="track">
+										<img src="https://cdns-images.dzcdn.net/images/cover/2e018122cb56986277102d2041a592c8/120x120-000000-80-0-0.jpg">
+										<span class="title">Discovery</span></br>
+										<span class="artist">Daft Punk</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<button class="acc_ctrl">
+									<h2>House</h2></button>
+								<div class="acc_panel">
+									<div class="track">
+										<img src="https://cdns-images.dzcdn.net/images/cover/2e018122cb56986277102d2041a592c8/120x120-000000-80-0-0.jpg">
+										<span class="title">Discovery</span></br>
+										<span class="artist">Daft Punk</span>
+									</div>
+									<div class="track">
+										<img src="https://cdns-images.dzcdn.net/images/cover/2e018122cb56986277102d2041a592c8/120x120-000000-80-0-0.jpg">
+										<span class="title">Discovery</span></br>
+										<span class="artist">Daft Punk</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<button class="acc_ctrl">
+									<h2>Deep</h2></button>
+								<div class="acc_panel">
+									<div class="track">
+										<img src="https://cdns-images.dzcdn.net/images/cover/2e018122cb56986277102d2041a592c8/120x120-000000-80-0-0.jpg">
+										<span class="title">Discovery</span></br>
+										<span class="artist">Daft Punk</span>
+									</div>
+									<div class="track">
+										<img src="https://cdns-images.dzcdn.net/images/cover/2e018122cb56986277102d2041a592c8/120x120-000000-80-0-0.jpg">
+										<span class="title">Discovery</span></br>
+										<span class="artist">Daft Punk</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+				<!-- / tabs_item -->
+
+			</div>
+			<!-- / tab_content -->
+		</div>
+		<!-- / tab -->
+	</div>
+
+	<div id="play-bar">
+
+		<a href="#" id="toggleButton-right"><i class="fa fa-list"></i></a>
+		
+		
+
+		<script src="audiojs/audio.min.js"></script>
+		<script src="scripts/jquery-2.2.1.min.js"></script>
+		<script src="scripts/main.js"></script>
 </body>
 
 </html>
