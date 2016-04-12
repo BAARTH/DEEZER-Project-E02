@@ -1,59 +1,81 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
-	<title>DEEZER</title>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300' rel='stylesheet' type='text/css'>
-	<!-- Font -->
-	<link rel="stylesheet" href="styles/bootstrap.min.css" />
-	<!-- Bootstrap -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<!-- Font awesome -->
-	<link rel="stylesheet" href="styles/style.css" />
-	<!-- Css mise en forme -->
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <title>DEEZER</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300' rel='stylesheet' type='text/css'>
+    <!-- Font -->
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- Css mise en forme -->
+  </head>
 
-<body>
-	<div id="nav-bar">
-		<div id="deezer-logo">
-            <img src="images/Deezer_logo.png" alt="logo"></img>
-		</div>
-		<div class="bar-recherche">
-		    <form>
-                <span><input type="text" class="rechercher" placeholder="Rechercher"></span>
-		    </form>
-        </div>
-		<ul id="menu">
-			<li>Accueil</li>
-			<li>A écouter</li>
-			<li>Infos &amp; divertissement</li>
-			<li>Nouveautés</li>
-			<li>Top playlists</li>
-			<li>Mix</li>
-			<li>Ambiances</li>
-		</ul>
-		<h2>User</h2>
-		<a href="#" id="user-button"><i class="fa fa-angle-down"></i></a>
-		<ul id="user-interface">
-			<li>Profil</li>
-			<li>Coups de coeur</li>
-			<li>Playlists</li>
-			<li>Albums</li>
-			<li>Podcasts</li>
-			<li>Applications</li>
-		</ul>
-	</div>
+  <body>
+    <div id="nav-bar">
+      <div id="deezer-logo">
+        <img src="images/Deezer_logo.png" alt="logo"></img>
+    </div>
+    <div class="bar-recherche">
+      <form>
+        <span><input type="text" class="rechercher" placeholder="Rechercher"></span>
+      </form>
+    </div>
+    <ul id="menu">
+      <li>Accueil</li>
+      <li>A écouter</li>
+      <li>Infos &amp; divertissement</li>
+      <li>Nouveautés</li>
+      <li>Top playlists</li>
+      <li>Mix</li>
+      <li>Ambiances</li>
+    </ul>
+    <p>User</p>
+    <a href="#" id="user-button"><i class="fa fa-angle-down"></i></a>
+    <ul id="user-interface">
+      <li>Profil</li>
+      <li>Coups de coeur</li>
+      <li>Playlists</li>
+      <li>Albums</li>
+      <li>Podcasts</li>
+      <li>Applications</li>
+    </ul>
+    </div>
 
-	<div id="right-bar"></div>
+  <div id="right-bar"></div>
 
-	<div id="play-bar"><a href="#" id="toggleButton-right"><i class="fa fa-list"></i></a>
+  <!--------- TOPS PAGE ------------>
+
+  <div id="div-tops"> 
+    <div id="bg-tops"> 
+      <h2 class="col-md-2"> Tops </h2>
+    </div>
+    <h3> Le top des morceaux </h3>
+    <div class="block-center" id="topDesMorceaux">
+      <div class="col-md-offset-1 col-md-5"> </div>
+      <div class="col-md-5"> </div>
+      <div class="col-md-5"> </div>
+     
+    </div>
 
 
-	<script src="scripts/jquery-2.2.1.min.js"></script>
-	<script src="scripts/main.js"></script>
-</body>
+
+
+  </div>
+
+  <div id="play-bar"><a href="#" id="toggleButton-right"><i class="fa fa-list"></i></a>
+
+
+
+
+
+    <script src="scripts/jquery-2.2.1.min.js"></script>
+    <script src="scripts/main.js"></script>
+    </body>
 
 </html>
