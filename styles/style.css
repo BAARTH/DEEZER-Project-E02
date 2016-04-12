@@ -180,6 +180,10 @@ input[type=text] {
 	float: right;
 }
 
+#container-user:hover + #user-button i{
+	color: #FFFFFF;
+}
+
 #toggleButton-right:hover {
 	color: #FFFFFF;
 }
@@ -247,7 +251,7 @@ ul.tabs.active {
 }
 
 .tabs_item .track {
-	padding-bottom: 10px;
+	padding: 1px 0;
 	border-bottom: 1px #FFFFFF solid;
 }
 
@@ -261,7 +265,7 @@ ul.tabs.active {
 }
 
 .tabs_item img {
-	width: 40px;
+	width: 35px;
 	float: left;
 	margin-right: 10px;
 }
@@ -308,7 +312,7 @@ ul.tabs.active {
 .acc li {
 	list-style-type: none;
 	padding: 0;
-	border:none;
+	border: none;
 }
 
 .acc_ctrl {
@@ -373,7 +377,7 @@ ul.tabs.active {
 	background-color: #1C1C25;
 	display: none;
 	overflow: hidden;
-	padding:0;
+	padding: 0;
 }
 
 .track:last-child {
@@ -406,6 +410,9 @@ ul.tabs.active {
 	padding: 0;
 }
 
+ul {
+	margin-bottom: 0;
+}
 
 
 /* PLAYLIST MANAGER */

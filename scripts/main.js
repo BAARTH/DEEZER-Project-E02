@@ -2,16 +2,15 @@ $(document).ready(function () {
 
 
 	$("#user-interface").hide();
-	$("#user-button").click(
+	$("#user-button, #user-profile").click(
+
 		function () {
 			$("#user-interface").slideToggle();
-			$(this).find('i').toggleClass("rotate");
+			$("#user-button").find('i').toggleClass("rotate");
 
 		});
 	var boxWidth = $("#right-bar").width();
-	//$("#right-bar").width(0);
-
-
+	$("#right-bar").width(0);
 
 
 	$("#toggleButton-right").click(function () {
@@ -29,16 +28,16 @@ $(document).ready(function () {
 			});
 		}
 	});
-	
+
 	/* AUDIO */
-	
+
 	audiojs.events.ready(function () {
 		var as = audiojs.createAll();
 	});
-	
 
-/* GESTIONNAIRE TAB */
-	
+
+	/* GESTIONNAIRE TAB */
+
 	(function ($) {
 		$('.tab ul.tabs').addClass('active').find('> li:eq(0)').addClass('current');
 
@@ -55,41 +54,70 @@ $(document).ready(function () {
 			g.preventDefault();
 		});
 	})(jQuery);
-	
-	$(function() {
-  $('.acc_ctrl').on('click', function(e) {
-    e.preventDefault();
-    if ($(this).hasClass('active')) {
-      $(this).removeClass('active');
-      $(this).next()
-      .stop()
-      .slideUp(300);
-    } else {
-      $(this).addClass('active');
-      $(this).next()
-      .stop()
-      .slideDown(300);
-    }
-  });
-});
-	
-	/* GESTIONNAIRE DE PLAYLIST */
-	
-	  $(function() {
-			
-    $(".acc_panel").sortable({
-			connectWith: '.acc_panel',
-start: function (event, ui) {
-                        ui.item.toggleClass("highlight");
-                },
-                stop: function (event, ui) {
-                        ui.item.toggleClass("highlight");
-                }
-    });
-   
-    $("#sortable").disableSelection();
-  });
-	
-	
 
+	function button_playlist() {
+		$(function () {
+			$('.acc_ctrl').on('click', function (e) {
+				e.preventDefault();
+				if ($(this).hasClass('active')) {
+					$(this).removeClass('active');
+					$(this).next()
+						.stop()
+						.slideUp(300);
+				} else {
+					$(this).addClass('active');
+					$(this).next()
+						.stop()
+						.slideDown(300);
+				}
+			});
+		});
+	}
+
+	button_playlist();
+
+	/* GESTIONNAIRE DE PLAYLIST */
+	function playlist() {
+		$(function () {
+
+			$(".acc_panel").sortable({
+				connectWith: '.acc_panel',
+				start: function (event, ui) {
+					ui.item.toggleClass("highlight");
+				},
+				stop: function (event, ui) {
+					ui.item.toggleClass("highlight");
+				}
+			});
+
+			$(".acc_panel").disableSelection();
+
+
+			$(".acc").sortable({
+				connectWith: '.acc',
+				start: function (event, ui) {
+					ui.item.toggleClass("highlight");
+				},
+				stop: function (event, ui) {
+					ui.item.toggleClass("highlight");
+				}
+			});
+
+			$(".acc").disableSelection();
+
+
+
+
+		});
+	}
+	
+	playlist();
+
+	$("#new_playlist").click(function () {
+
+		$(".acc").prepend('<div id="playlist" > <div class="acc_ctrl" class="ui-state-default"><h2 contentEditable="true">New playlist</h2></div> <ul class="acc_panel"><li class="track"></li> </ul> </div>');
+		$('.acc_ctrl').off('click');
+		button_playlist();
+		playlist();
+	});
 });
