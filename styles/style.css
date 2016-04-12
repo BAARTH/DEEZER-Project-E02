@@ -9,41 +9,87 @@ body {
 	position: relative;
 }
 
-#deezer-logo img{
-    width: 115px;
+#deezer-logo img {
+	width: 115px;
 }
 
-#deezer-logo{
-    margin-left: 50px;
-    margin-top: 12px;
+#deezer-logo {
+	margin-left: 50px;
+	margin-top: 12px;
 }
+
 
 /* BAR DE RECHERCHE */
 
-.bar-recherche{
-    padding-top: 12px;
-    padding-left: 12px;
+.bar-recherche {
+	padding-top: 12px;
+	padding-left: 12px;
 }
 
-form{
-	width:500px;
-	margin:0 auto;
+form {
+	width: 500px;
+	margin: 0 auto;
 }
 
-.rechercher { 
-	padding:6px 30px 6px 10px;
-	margin:3px; 
-	 
+.rechercher {
+	padding: 6px 30px 6px 10px;
+	margin: 3px;
 }
 
-input[type=text]{
-	border:1px solid #acb1b7;
-	background-color:#fcfcfc;
-    color: #1a1818;
-    width: 180px;
-    border-radius: 10px;
+input[type=text] {
+	border: 1px solid #acb1b7;
+	background-color: #C2C2CA;
+	color: #23232C;
+	width: 180px;
+	border-radius: 5px;
+	outline: none;
 }
 
+::-webkit-input-placeholder {
+	/* WebKit, Blink, Edge */
+	color: #23232C;
+}
+
+:-moz-placeholder {
+	/* Mozilla Firefox 4 to 18 */
+	color: #23232C;
+	opacity: 1;
+}
+
+::-moz-placeholder {
+	/* Mozilla Firefox 19+ */
+	color: #23232C;
+	opacity: 1;
+}
+
+:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	color: #23232C;
+}
+
+#search-button {
+	margin-left: -30px;
+	background: url("../images/loupe.png");
+	background-color: none;
+	border: none;
+	width: 16px;
+	height: 16px;
+	outline: none;
+}
+
+#user-profile {
+	width: 50px;
+	margin: auto;
+}
+
+#container-user {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	border-top: 0.5px #C2C2CA solid;
+	padding-top: 20px;
+	margin-top: 20px;
+}
 
 
 /* NAV BAR */
@@ -51,7 +97,8 @@ input[type=text]{
 #nav-bar {
 	position: absolute;
 	left: 200;
-	background-image: -webkit-linear-gradient(left, #121212 0%, #00172B 100%);
+	/*background-image: -webkit-linear-gradient(left, #121212 0%, #00172B 100%);*/
+	background-color: #23232C;
 	height: 100%;
 	width: 220px;
 }
@@ -60,9 +107,23 @@ input[type=text]{
 	font-size: 13px;
 	list-style: none;
 	text-transform: uppercase;
+	padding-left: 0px;
+	line-height: 30px;
+}
+
+#nav-bar li {
 	padding-left: 20px;
-	line-height: 34px;
-    padding-top: 12px;
+}
+
+#nav-bar li:hover {
+	font-weight: 600;
+	color: white;
+	background-color: #1C1C25;
+	border-left: 1px #007FEB solid;
+}
+
+#menu {
+	padding-top: 12px;
 }
 
 #nav-bar h1 {
@@ -71,17 +132,26 @@ input[type=text]{
 	padding: 10px;
 }
 
-#nav-bar h2 {
-	text-align: center;
-	margin-left: -10px;
-}
-
 #user-button {
 	padding-left: 50%;
-	margin-left: -10px;
+	margin-left: -7px;
 	font-size: 20px;
 	color: #C2C2CA;
 	text-align: center;
+}
+
+#user-button:hover i {
+	color: #FFFFFF;
+}
+
+#user-interface {
+	list-style: none;
+	text-transform: uppercase;
+}
+
+#user-interface li {
+	font-size: 12px;
+	line-height: 28px;
 }
 
 .rotate {
@@ -91,7 +161,10 @@ input[type=text]{
 	-o-transform: rotate(-180deg);
 }
 
-#right-bar{
+
+/* RIGHT BAR */
+
+#right-bar {
 	position: absolute;
 	right: 0;
 	background-color: #23232C;
@@ -99,22 +172,217 @@ input[type=text]{
 	width: 220px;
 }
 
-
 #toggleButton-right {
-	
-
 	padding-right: 2%;
-	padding-top:10px;
+	padding-top: 10px;
 	font-size: 20px;
 	color: #C2C2CA;
 	float: right;
 }
 
-#play-bar{
-	position:absolute;
+#toggleButton-right:hover {
+	color: #FFFFFF;
+}
+
+.tab {
+	margin-bottom: 20px;
+	position: relative;
+	overflow: hidden;
+	background-color: #23232C;
+	width: 100%;
+	margin: 0 0;
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.5;
+	font-weight: 300;
+	color: #888;
+	-webkit-font-smoothing: antialiased;
+}
+
+.tabs {
+	display: table;
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+	width: 100%;
+}
+
+ul.tabs.active {
+	padding: 0;
+}
+
+.tabs li {
+	float: left;
+	line-height: 38px;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+	width: 33%;
+	text-align: center;
+}
+
+.tabs a {
+	background-color: #23232C;
+	border-bottom: 1px solid #fff;
+	color: #C2C2CA;
+	font-weight: 500;
+	display: block;
+	letter-spacing: 0;
+	outline: none;
+	padding: 0;
+	text-decoration: none;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	border-bottom: 2px solid #007FEB;
+}
+
+.tabs_item {
+	display: none;
+	padding: 35px 0px;
+	color: #FFFFFF;
+	font-size: 12px;
+}
+
+.tabs_item .track {
+	padding-bottom: 10px;
+	border-bottom: 1px #FFFFFF solid;
+}
+
+.tabs_item .title {
+	font-style: italic;
+}
+
+.tabs_item .artist {
+	font-style: italic;
+	font-weight: 600;
+}
+
+.tabs_item img {
+	width: 40px;
+	float: left;
+	margin-right: 10px;
+}
+
+.tabs_item:first-child {
+	display: block;
+}
+
+.current a {
+	color: #fff;
+	background: #007FEB;
+}
+
+
+/* PLAY BAR */
+
+#play-bar {
+	position: absolute;
 	width: 100%;
 	height: 50px;
 	background-color: #23232C;
-	bottom:0;
-	
+	bottom: 0;
+}
+
+
+/* PLAYLIST */
+
+.acc h2 {
+	color: #C2C2CA;
+	font-size: 12px;
+	letter-spacing: 1px;
+	margin: 0;
+	text-transform: uppercase;
+	padding: 0;
+}
+
+.acc p {
+	color: #C2C2CA;
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+.acc .container_playlist {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.acc {
+	margin: -32px 0;
+	overflow: hidden;
+	padding: 0;
+}
+
+.acc li {
+	list-style-type: none;
+	padding: 0;
+}
+
+.acc_ctrl {
+	background: #23232C;
+	border: none;
+	border-bottom: solid 1px #007FEB;
+	cursor: pointer;
+	display: block;
+	outline: none;
+	padding: 15px;
+	position: relative;
+	text-align: center;
+	width: 100%;
+}
+
+.acc_ctrl:before {
+	background: #44596B;
+	content: '';
+	height: 2px;
+	margin-right: 37px;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	width: 14px;
+}
+
+.acc_ctrl:after {
+	background: #44596B;
+	content: '';
+	height: 2px;
+	margin-right: 37px;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 14px;
+}
+
+.acc_ctrl.active:before {
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+
+.acc_ctrl.active h2,
+.acc_ctrl:focus h2 {
+	position: relative;
+}
+
+.acc_panel {
+	background-color: #1C1C25;
+	display: none;
+	overflow: hidden;
+}
+
+.track:last-child {
+	border-bottom: solid 1px #007FEB;
+ 
 }
