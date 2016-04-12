@@ -127,7 +127,19 @@ input[type=text]{
 }
 
 #div-nouveautes h3{
-    color : #000000;
+    color : #454545;
+}
+
+.nouv-new-album{
+    height: 200px;
+}
+
+#new-coldplay{
+    padding-left:  50px;
+}
+
+#crazy-eyes{
+    padding-left: 50px;
 }
 /* BAR DROITE*/
 
