@@ -157,16 +157,58 @@ h3 {
 
 #topDesMorceaux div{
   height: 30px;
-  background-color:aqua;
+  border-bottom: grey solid 1px;
   margin-top: 20px;
   margin-left: 40px;
 }
 
+#topDesMorceaux div p{
+  font-family: OpenSans-CondensedLight;
+  font-size: 18px;
+  color: #585858;
+  display: inline-block;
+  margin-left: 30px;
 
+}
 
+#topDesMorceaux img{
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  vertical-align: middle;
+}
 
+#topDesMorceaux div span img{
+ width: 15px;
+  height: 15px;
+ margin-bottom: 10px;
+  
+}
 
+.duoBouton div{
+  background-color: grey;
+  text-align: center;
+  height: 90px;
+  margin-top: 50px;
+}
 
+.duoBouton div p{
+  font-size: 30px;
+  text-transform: uppercase;
+  color: white;
+}
+
+#genre{
+  background-image: url(../images/festival-GENRES.jpg);
+background-size:cover;
+  background-position:top;
+}
+
+#autourDeVous{
+    background-image: url(../images/Autour%20de%20vous%20FESTIVAL.jpg);
+background-size:cover;
+  background-position:bottom;
+}
 
 
 
