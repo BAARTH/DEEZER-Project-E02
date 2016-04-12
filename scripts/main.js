@@ -29,10 +29,16 @@ $(document).ready(function () {
 			});
 		}
 	});
+	
+	/* AUDIO */
+	
 	audiojs.events.ready(function () {
 		var as = audiojs.createAll();
 	});
+	
 
+/* GESTIONNAIRE TAB */
+	
 	(function ($) {
 		$('.tab ul.tabs').addClass('active').find('> li:eq(0)').addClass('current');
 
@@ -66,5 +72,24 @@ $(document).ready(function () {
     }
   });
 });
+	
+	/* GESTIONNAIRE DE PLAYLIST */
+	
+	  $(function() {
+			
+    $(".acc_panel").sortable({
+			connectWith: '.acc_panel',
+start: function (event, ui) {
+                        ui.item.toggleClass("highlight");
+                },
+                stop: function (event, ui) {
+                        ui.item.toggleClass("highlight");
+                }
+    });
+   
+    $("#sortable").disableSelection();
+  });
+	
+	
 
 });

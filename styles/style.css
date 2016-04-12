@@ -184,6 +184,9 @@ input[type=text] {
 	color: #FFFFFF;
 }
 
+
+/* TABS */
+
 .tab {
 	margin-bottom: 20px;
 	position: relative;
@@ -273,17 +276,6 @@ ul.tabs.active {
 }
 
 
-/* PLAY BAR */
-
-#play-bar {
-	position: absolute;
-	width: 100%;
-	height: 50px;
-	background-color: #23232C;
-	bottom: 0;
-}
-
-
 /* PLAYLIST */
 
 .acc h2 {
@@ -308,7 +300,7 @@ ul.tabs.active {
 }
 
 .acc {
-	margin: -32px 0;
+	margin: 0px 0;
 	overflow: hidden;
 	padding: 0;
 }
@@ -316,6 +308,7 @@ ul.tabs.active {
 .acc li {
 	list-style-type: none;
 	padding: 0;
+	border:none;
 }
 
 .acc_ctrl {
@@ -380,9 +373,50 @@ ul.tabs.active {
 	background-color: #1C1C25;
 	display: none;
 	overflow: hidden;
+	padding:0;
 }
 
 .track:last-child {
 	border-bottom: solid 1px #007FEB;
- 
+}
+
+#new_playlist {
+	padding: 0;
+	list-style: none;
+	margin: 0;
+	margin-bottom: 0px;
+	background: #23232C;
+	border: none;
+	border-bottom: solid 1px #007FEB;
+	cursor: pointer;
+	display: block;
+	outline: none;
+	padding: 15px;
+	position: relative;
+	text-align: center;
+	width: 100%;
+}
+
+#new_playlist h2 {
+	color: #C2C2CA;
+	font-size: 12px;
+	letter-spacing: 1px;
+	margin: 0;
+	text-transform: uppercase;
+	padding: 0;
+}
+
+
+
+/* PLAYLIST MANAGER */
+
+
+/* PLAY BAR */
+
+#play-bar {
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	background-color: #23232C;
+	bottom: 0;
 }

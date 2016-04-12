@@ -10,6 +10,9 @@
 	<!-- Font -->
 	<link rel="stylesheet" href="styles/bootstrap.min.css" />
 	<!-- Bootstrap -->
+	<link rel="stylesheet" href="styles/jquery-ui.min.css">
+
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="styles/style.css" />
@@ -54,6 +57,8 @@
 		</ul>
 	</div>
 
+
+
 	<div id="right-bar">
 		<div class="tab">
 
@@ -71,56 +76,61 @@
 
 				<div class="tabs_item">
 					<div class="container_playlist">
-						<ul class="acc">
-							<li>
-								<button class="acc_ctrl">
-									<h2>Chill</h2></button>
-								<div class="acc_panel">
-									<div class="track">
-										<img src="https://cdns-images.dzcdn.net/images/cover/2e018122cb56986277102d2041a592c8/120x120-000000-80-0-0.jpg">
-										<span class="title">Discovery</span></br>
-										<span class="artist">Daft Punk</span>
-									</div>
-									<div class="track">
-										<img src="https://cdns-images.dzcdn.net/images/cover/2e018122cb56986277102d2041a592c8/120x120-000000-80-0-0.jpg">
-										<span class="title">Discovery</span></br>
-										<span class="artist">Daft Punk</span>
-									</div>
-								</div>
-							</li>
-							<li>
+						<div id="new_playlist">
+							<h2>Create new</h2>
+						</div>
+
+						<div class="acc">
+							<div>
 								<button class="acc_ctrl">
 									<h2>House</h2></button>
-								<div class="acc_panel">
-									<div class="track">
+								<ul class="acc_panel">
+									<li class="ui-state-default track">
 										<img src="https://cdns-images.dzcdn.net/images/cover/2e018122cb56986277102d2041a592c8/120x120-000000-80-0-0.jpg">
 										<span class="title">Discovery</span></br>
 										<span class="artist">Daft Punk</span>
-									</div>
-									<div class="track">
+									</li>
+									<li class="ui-state-default track">
 										<img src="https://cdns-images.dzcdn.net/images/cover/2e018122cb56986277102d2041a592c8/120x120-000000-80-0-0.jpg">
 										<span class="title">Discovery</span></br>
 										<span class="artist">Daft Punk</span>
-									</div>
-								</div>
-							</li>
-							<li>
+									</li>
+								</ul>
+							</div>
+							<div>
+								<button class="acc_ctrl">
+									<h2>House</h2></button>
+								<ul class="acc_panel">
+									<li class="ui-state-default track">
+										<img src="https://cdns-images.dzcdn.net/images/cover/2e018122cb56986277102d2041a592c8/120x120-000000-80-0-0.jpg">
+										<span class="title">Discovery</span></br>
+										<span class="artist">Daft Punk</span>
+									</li>
+									<li class="ui-state-default track">
+										<img src="https://cdns-images.dzcdn.net/images/cover/2e018122cb56986277102d2041a592c8/120x120-000000-80-0-0.jpg">
+										<span class="title">Discovery</span></br>
+										<span class="artist">Daft Punk</span>
+									</li>
+								</ul>
+							</div>
+							<div>
 								<button class="acc_ctrl">
 									<h2>Deep</h2></button>
-								<div class="acc_panel">
-									<div class="track">
+								<ul class="acc_panel">
+									<li class="ui-state-default track">
 										<img src="https://cdns-images.dzcdn.net/images/cover/2e018122cb56986277102d2041a592c8/120x120-000000-80-0-0.jpg">
 										<span class="title">Discovery</span></br>
 										<span class="artist">Daft Punk</span>
-									</div>
-									<div class="track">
+									</li>
+									<li class="ui-state-default track">
 										<img src="https://cdns-images.dzcdn.net/images/cover/2e018122cb56986277102d2041a592c8/120x120-000000-80-0-0.jpg">
 										<span class="title">Discovery</span></br>
 										<span class="artist">Daft Punk</span>
-									</div>
-								</div>
-							</li>
-						</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+
 					</div>
 
 				</div>
@@ -249,10 +259,12 @@
 	<div id="play-bar">
 
 		<a href="#" id="toggleButton-right"><i class="fa fa-list"></i></a>
+	</div>
+	<script src="audiojs/audio.min.js"></script>
 
-		<script src="audiojs/audio.min.js"></script>
-		<script src="scripts/jquery-2.2.1.min.js"></script>
-		<script src="scripts/main.js"></script>
+	<script src="scripts/jquery-2.2.1.min.js"></script>
+	<script src="scripts/jquery-ui.min.js"></script>
+	<script src="scripts/main.js"></script>
 </body>
 
 </html>
