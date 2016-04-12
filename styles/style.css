@@ -95,12 +95,12 @@ input[type=text] {
 /* NAV BAR */
 
 #nav-bar {
-	position: absolute;
-	left: 200;
+    width: 16%;
+	height: 100%;
+    float: left;
+    
 	/*background-image: -webkit-linear-gradient(left, #121212 0%, #00172B 100%);*/
 	background-color: #23232C;
-	height: 100%;
-	width: 220px;
 }
 
 #nav-bar ul {
@@ -160,16 +160,90 @@ input[type=text] {
 	-ms-transform: rotate(-180deg);
 	-o-transform: rotate(-180deg);
 }
+/* CONTENU NOUVEAUTES */
 
+#contenu-nouveautes{
+    height: 100%;
+    width: 68%;
+    float: left;
+    overflow-x: scroll;
+}
+
+#contenu-nouveautes header{
+    background-image: url(../images/nouv.png);
+    background-size: cover;
+    height: 30%;
+    width: 100%;
+}
+
+#contenu-nouveautes h2{
+    margin: 0;
+    color:#ffffff;
+    font-family: Arial;
+    font-size: 40px;
+    padding-left: 50px;
+    padding-top: 80px;
+    
+}
+
+#nouveautes-content h3{
+    font-family: Arial;
+    font-weight: 600;
+    color:#000000;
+    padding-left: 20px;
+    float: left;
+    width: 100%;
+    
+    
+}
+
+#nouveautes-content{
+    padding-left: 3%;
+}
+
+.nouv-album{
+    height: 200px;
+}
+
+.nouv-image-titre{
+    float: left;
+}
+
+#nouv-pop, #nouv-rock{
+    clear: both;
+    float: left;
+}
+
+.nouv-image-titre p{
+    padding-left: 12%;
+    font-family: Arial; 
+    
+    
+    
+    
+}
+
+.nouv-image-titre p:first-of-type {
+    color: #000000;
+    font-weight: 700;
+    
+}
+
+.nouv-image-titre p:nth-of-type(2){
+    color: #5c5a5a;
+    font-size: 12px;
+    margin-top: -8px;
+    font-weight: 700;
+}
 
 /* RIGHT BAR */
 
 #right-bar {
-	position: absolute;
-	right: 0;
-	background-color: #23232C;
+	width: 16%;
 	height: 100%;
-	width: 220px;
+    float: right;
+
+	background-color: #23232C;
 }
 
 #toggleButton-right {
