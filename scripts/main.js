@@ -11,6 +11,7 @@ $(document).ready(function () {
 		});
 	var boxWidth = $("#right-bar").width();
 	$("#right-bar").width(0);
+	$("#content").css("margin-right", 0);
 
 
 	$("#toggleButton-right").click(function () {
@@ -21,19 +22,21 @@ $(document).ready(function () {
 			$("#right-bar").animate({
 				width: 0
 			});
+			$("#content").animate({
+				marginRight: 0
+			});
 		} else {
 			$("#right-bar").addClass("active");
 			$("#right-bar").animate({
 				width: boxWidth
 			});
+			$("#content").animate({
+				marginRight: boxWidth
+			});
 		}
 	});
 
 	/* AUDIO */
-
-	audiojs.events.ready(function () {
-		var as = audiojs.createAll();
-	});
 
 
 	/* GESTIONNAIRE TAB */
@@ -93,7 +96,7 @@ $(document).ready(function () {
 			$(".acc_panel").disableSelection();
 
 
-			$(".acc").sortable({
+			$(".acc_playlist").sortable({
 				connectWith: '.acc',
 				start: function (event, ui) {
 					ui.item.toggleClass("highlight");
@@ -103,7 +106,7 @@ $(document).ready(function () {
 				}
 			});
 
-			$(".acc").disableSelection();
+			$(".acc_playlist").disableSelection();
 
 
 
@@ -115,18 +118,22 @@ $(document).ready(function () {
 
 	$("#new_playlist").click(function () {
 
-		$(".acc").prepend('<div id="playlist" > <div class="acc_ctrl" class="ui-state-default"><h2 contentEditable="true">New playlist</h2></div> <ul class="acc_panel"><li class="track"></li> </ul> </div>');
+		$(".acc_playlist").prepend('<div id="playlist" > <div class="acc_ctrl" class="ui-state-default"><h2 contentEditable="true">New playlist</h2></div> <ul class="acc_panel"><li class="track"></li> </ul> </div>');
 		$('.acc_ctrl').off('click');
 		button_playlist();
 		playlist();
 	});
+	
+
+	
+	
 
 
 
 	var trackData = track.tracks.data;
 
 	var nombre1 = Math.floor(Math.random() * trackData.length);
-	var numberOfTrack = $(".track")
+	var numberOfTrack = $(".track");
 	var trackLink = trackData[nombre1].preview;
 	var trackAlbum = trackData[nombre1].album.cover_small;
 	var trackTitle = trackData[nombre1].title;

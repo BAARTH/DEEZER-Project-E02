@@ -38,7 +38,7 @@
 		</div>
 		<ul id="menu">
 			<li>Accueil</li>
-			<li>A écouter</li>
+			<li>à écouter</li>
 			<li>Infos &amp; divertissement</li>
 			<li>Nouveautés</li>
 			<li>Top playlists</li>
@@ -57,7 +57,9 @@
 		</ul>
 	</div>
 
+	<!------ HOME CONTENU------->
 
+	<div id="bgFlow"> </div>
 
 	<div id="right-bar">
 		<div class="tab">
@@ -80,7 +82,7 @@
 							<h2>Create new</h2>
 						</div>
 
-						<div class="acc">
+						<div class="acc acc_playlist">
 							<div id="playlist">
 								<div class="acc_ctrl" class="ui-state-default">
 									<h2>Chill</h2></div>
@@ -140,13 +142,9 @@
 				<!-- / tabs_item -->
 
 				<div class="tabs_item">
-					<div class="container_playlist">
-						<ul class="acc">
-						<li id="playable" class="ui-state-default track">
-										<a href="#" data-src=""> <img src="">
-											<span class="title"></span></br>
-											<span class="artist"></span></a>
-									</li>
+					<div class="container_playlist" id="history">
+						<ul class="acc acc_history historyList">
+							</li>
 						</ul>
 					</div>
 
@@ -155,56 +153,7 @@
 
 				<div class="tabs_item">
 					<div class="container_playlist">
-						<ul class="acc">
-							<li>
-								<button class="acc_ctrl">
-									<h2>Chill</h2></button>
-								<div class="acc_panel">
-									<div class="track">
-										<img src="https://cdns-images.dzcdn.net/images/cover/2e018122cb56986277102d2041a592c8/120x120-000000-80-0-0.jpg">
-										<span class="title">Discovery</span></br>
-										<span class="artist">Daft Punk</span>
-									</div>
-									<div class="track">
-										<img src="https://cdns-images.dzcdn.net/images/cover/2e018122cb56986277102d2041a592c8/120x120-000000-80-0-0.jpg">
-										<span class="title">Discovery</span></br>
-										<span class="artist">Daft Punk</span>
-									</div>
-								</div>
-							</li>
-							<li>
-								<button class="acc_ctrl">
-									<h2>House</h2></button>
-								<div class="acc_panel">
-									<div class="track">
-										<img src="https://cdns-images.dzcdn.net/images/cover/2e018122cb56986277102d2041a592c8/120x120-000000-80-0-0.jpg">
-										<span class="title">Discovery</span></br>
-										<span class="artist">Daft Punk</span>
-									</div>
-									<div class="track">
-										<img src="https://cdns-images.dzcdn.net/images/cover/2e018122cb56986277102d2041a592c8/120x120-000000-80-0-0.jpg">
-										<span class="title">Discovery</span></br>
-										<span class="artist">Daft Punk</span>
-									</div>
-								</div>
-							</li>
-							<li>
-								<button class="acc_ctrl">
-									<h2>Deep</h2></button>
-								<div class="acc_panel">
-									<div class="track">
-										<img src="https://cdns-images.dzcdn.net/images/cover/2e018122cb56986277102d2041a592c8/120x120-000000-80-0-0.jpg">
-										<span class="title">Discovery</span></br>
-										<span class="artist">Daft Punk</span>
-									</div>
-									<div class="track">
-										<img src="https://cdns-images.dzcdn.net/images/cover/2e018122cb56986277102d2041a592c8/120x120-000000-80-0-0.jpg">
-										<span class="title">Discovery</span></br>
-										<span class="artist">Daft Punk</span>
-									</div>
-								</div>
-							</li>
-						</ul>
+					 <p>Vous n'avez aucune activité pour le moment.</p>
 					</div>
 
 				</div>
@@ -216,13 +165,77 @@
 		<!-- / tab -->
 	</div>
 
-	<div id="play-bar">
-		<a href="#" id="toggleButton-right"><i class="fa fa-list"></i></a>
-		<div id="wrapper">
-			<audio></audio>
+	<!------ HOME CONTENU------->
+
+	<div id="content">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12 bgFlow ">
+					<div class="valign"></div>
+					<div id="encadrement">
+						<h2> Flow </h2>
+						<img alt="play" src="images/multimedia.png" />
+						<div id="trait"> </div>
+						<p> Pharell Williams</p>
+						<div id="trait"> </div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<h3 class="col-md-6 col-md-offset-1"> Nos mixs énènements  </h3>
+			</div>
+			<div class="row">
+				<ul class="col-md-6 slider col-md-offset-3">
+					<li>
+						<img src="images/phrrell.jpg" />
+					</li>
+					<li>
+						<img src="images/phrrell.jpg" />
+					</li>
+					<li>
+						<img src="images/phrrell.jpg" />
+					</li>
+					<li>
+						<img src="images/phrrell.jpg" />
+					</li>
+				</ul>
+				<p id="ecouter"> Ecouter le mix </p>
+			</div>
+
+			<div class="row">
+				<h3 class="col-md-6 col-md-offset-1"> Les nouveautés pour vous  </h3>
+			</div>
+			<div class="row">
+				<h3 class="col-md-6 col-md-offset-1"> Les nouveautés pour vous  </h3>
+			</div>
+			<div class="row">
+				<h3 class="col-md-6 col-md-offset-1"> Les nouveautés pour vous  </h3>
+			</div>
+
 		</div>
+	</div>
 
+	<div id="play-bar">
+		<div class="relativeBtn">
+			<div class="containerBtn">
+				<i id="prev" class="fa fa-backward" aria-hidden="true"></i>
+				<div class="playBtn">
+					<i id="play" class="fa fa-play active" aria-hidden="true"></i>
+					<i id="pause" class="fa fa-pause" aria-hidden="true"></i>
+				</div>
+				<i id="next" class="fa fa-forward" aria-hidden="true"></i>
+			</div>
 
+			<a href="#" id="toggleButton-right"><i class="fa fa-list"></i></a>
+			<div class="containerInfos">
+				<img class="album" src=" ">
+				<div class="artTitle">
+				<span class="title"></span></br>
+				<span class="artist"></span>
+				</div>
+			</div>
+			<span><audio></audio></span>
+		</div>
 	</div>
 	<script src="scripts/data.json"></script>
 	<script src="scripts/main.js"></script>
