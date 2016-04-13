@@ -125,34 +125,23 @@ $(document).ready(function () {
 
 	var trackData = track.tracks.data;
 
-			var nombre1 = Math.floor(Math.random() * trackData.length);
-			var numberOfTrack = $(".track")
-			var trackLink = trackData[nombre1].preview;
-			var trackAlbum = trackData[nombre1].album.cover_small;
-			var trackTitle = trackData[nombre1].title;
-			var trackArtist = trackData[nombre1].artist.name;
+	var nombre1 = Math.floor(Math.random() * trackData.length);
+	var numberOfTrack = $(".track")
+	var trackLink = trackData[nombre1].preview;
+	var trackAlbum = trackData[nombre1].album.cover_small;
+	var trackTitle = trackData[nombre1].title;
+	var trackArtist = trackData[nombre1].artist.name;
 
-		$("li#playable").each(function () {
-
-			nombre1 = Math.floor(Math.random() * trackData.length);
-			numberOfTrack = $(".track")
-			trackLink = trackData[nombre1].preview;
-			trackAlbum = trackData[nombre1].album.cover_small;
-			trackTitle = trackData[nombre1].title;
-			trackArtist = trackData[nombre1].artist.name;
-
-
-			$(this).find(".title").html(trackTitle);
-			$(this).find(".artist").html(trackArtist);
-			$(this).find("img").attr('src', trackAlbum);
-			$(this).find("a").attr('data-src', trackLink);
-		});
-	
-console.log(trackLink);
-	console.log($(this).find(".track img").attr('src'));
-
-
-
-
-
+	$("li#playable").each(function () {
+		nombre1 = Math.floor(Math.random() * trackData.length);
+		numberOfTrack = $(".track")
+		trackLink = trackData[nombre1].preview;
+		trackAlbum = trackData[nombre1].album.cover_small;
+		trackTitle = trackData[nombre1].title;
+		trackArtist = trackData[nombre1].artist.name;
+		$(this).find(".title").html(trackTitle);
+		$(this).find(".artist").html(trackArtist);
+		$(this).find("img").attr('src', trackAlbum);
+		$(this).find("a").attr('data-src', trackLink);
+	});
 });
