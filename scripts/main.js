@@ -110,7 +110,7 @@ $(document).ready(function () {
 
 		});
 	}
-	
+
 	playlist();
 
 	$("#new_playlist").click(function () {
@@ -120,4 +120,24 @@ $(document).ready(function () {
 		button_playlist();
 		playlist();
 	});
+
+
+
+	var trackData = track.tracks.data;
+	var nombre1 = Math.floor(Math.random() * trackData.length);
+	 var trackLink = trackData[nombre1].preview;
+		var trackAlbum = trackData[nombre1].album.cover_small;
+		var trackTitle = trackData[nombre1].title;
+		var trackArtist = trackData[nombre1].artist.name;
+	console.log(track, trackLink, trackAlbum, trackArtist,trackTitle);
+
+	$(".title").html(trackTitle);
+	$(".artist").html(trackArtist);
+	$(".track img").attr('src', trackAlbum);
+	$(".track a").attr('data-src', trackLink);
+	
+	
+	$("#buttonAlgo").on('click', function () {
+	$("#algo").html("<p>" + algo1 + "</p>");
+		});
 });
