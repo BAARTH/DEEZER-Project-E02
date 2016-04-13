@@ -11,9 +11,9 @@
             });
             // Load in the first track
             var audio = a[0];
-            first = $('.trackList a').attr('data-src');
-            $('.trackList #playable').first().addClass('playing');
-            audio.load(first);
+//            first = $('.trackList a').attr('data-src');
+//            $('.trackList #playable').first().addClass('playing');
+//            audio.load(first);
             // Load in a track on click
             $('.trackList #playable').click(function(e) {
                 e.preventDefault();
