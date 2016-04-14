@@ -20,6 +20,7 @@
 
 	<script src="scripts/jquery-2.2.1.min.js"></script>
 	<script src="scripts/jquery-ui.min.js"></script>
+	<script src="scripts/bootstrap.min.js"></script>
 	<script src="audiojs/audio.js"></script>
 	<script src="scripts/lecteur.js"></script>
 </head>
@@ -38,14 +39,13 @@
 		</div>
 		<ul id="menu">
 			<li class="menuAccueil"><a href="#">Accueil</a></li>
-			<li class="menuDiscover"><a href="#" >Découvertes</a></li>
-			<li class="menuInfo"><a href="#">Infos &amp; divertissement</a></li>
+			<li class="menuDiscover"><a href="#">Découvertes</a></li>
 			<li class="menuNew"><a href="#">Nouveautés</a></li>
 			<li class="menuTop"><a href="#">Top playlists</a></li>
 			<li class="menuMix"><a href="#">Mix</a></li>
 			<li class="menuAmbiance"><a href="#">Ambiances</a></li>
 		</ul>
-		<div id="container-user"><img id="user-profile" alt="user" src="images/user-profile.png" /></div>
+		<div id="container-user"><img id="user-profile" alt="user" src="images/pp.png" /></div>
 		<a href="#" id="user-button"><i class="fa fa-angle-down"></i></a>
 		<ul id="user-interface">
 			<li class="menuProfil"><a href="#">Profil</a></li>
@@ -90,7 +90,7 @@
 							</div>
 							<div id="playlist">
 								<div class="acc_ctrl" class="ui-state-default">
-									<h2>Chill</h2></div>
+									<h2>Deep</h2></div>
 								<ul class="acc_panel trackList">
 									<li class="track"></li>
 									<li id="playable" class="ui-state-default track">
@@ -99,7 +99,7 @@
 											<span class="artist"></span></a>
 									</li>
 									<li id="playable" class="ui-state-default track">
-										<a href="#" data-src=""> <img src="">
+										<a href="#" data-src=" "> <img src="">
 											<span class="title"></span></br>
 											<span class="artist"></span></a>
 									</li>
@@ -124,7 +124,7 @@
 							</div>
 							<div id="playlist">
 								<div class="acc_ctrl" class="ui-state-default">
-									<h2>Chill</h2></div>
+									<h2>Drum n Bass</h2></div>
 								<ul class="acc_panel trackList">
 									<li class="track"></li>
 									<li id="playable" class="ui-state-default track">
@@ -150,7 +150,7 @@
 				<div class="tabs_item">
 					<div class="container_playlist" id="history">
 						<ul class="acc acc_history historyList">
-							</li>
+						
 						</ul>
 					</div>
 
@@ -174,9 +174,10 @@
 	<!------ HOME CONTENU------->
 
 	<div id="content">
-		<div id="accueil" class="container-fluid">
+		<div id="accueil" class="container-fluid overflow">
 			<div class="row">
 				<div class="col-md-12 bgFlow">
+
 					<div class="valign"></div>
 					<div id="encadrement">
 						<h2> Flow </h2>
@@ -188,34 +189,169 @@
 				</div>
 			</div>
 			<div class="row">
-				<h3 class="col-md-6 col-md-offset-1"> Nos mixs énènements  </h3>
-			</div>
-			<div class="row">
-				<ul class="col-md-6 slider col-md-offset-3">
+				<h3> Nos mixs énènements  </h3>
+				<ul class="col-md-8 slider col-md-offset-2">
 					<li>
-						<img src="images/phrrell.jpg" />
+						<img src="images/les-victoires.jpg" />
 					</li>
 					<li>
-						<img src="images/phrrell.jpg" />
+						<img src="images/grammy.jpg" />
 					</li>
 					<li>
-						<img src="images/phrrell.jpg" />
+						<img src="images/thevoice.jpg" />
 					</li>
 					<li>
-						<img src="images/phrrell.jpg" />
+						<img src="images/les-victoires.jpg" />
 					</li>
+					<p id="ecouter">Ecouter le mix</p>
 				</ul>
-				<p id="ecouter"> Ecouter le mix </p>
 			</div>
 
 			<div class="row">
-				<h3 class="col-md-6 col-md-offset-1"> Les nouveautés pour vous  </h3>
+				<h3> Les nouveautés pour vous  </h3>
+				<div class="col-md-12">
+
+
+
+
+
+				</div>
+			</div>
+
+			<div class="profil-content col-md-12 playlists-liste">
+				<div class="col-md-3 nouv-image-titre">
+					<div class="album-button-hover">
+						<img class="nouv-album" src="images/POP/coldplay.png">
+						<button class="button-album"></button>
+						<button class="button-album-bis"></button>
+					</div>
+					<p class="artist"></p>
+					<p class="title"></p>
+				</div>
+				<div class="col-md-3 nouv-image-titre">
+					<div class="album-button-hover">
+						<img class="nouv-album" src="images/POP/coldplay.png">
+						<button class="button-album"></button>
+						<button class="button-album-bis"></button>
+					</div>
+					<p class="artist"></p>
+					<p class="title"></p>
+				</div>
+				<div class="col-md-3 nouv-image-titre">
+					<div class="album-button-hover">
+						<img class="nouv-album" src="images/POP/coldplay.png">
+						<button class="button-album"></button>
+						<button class="button-album-bis"></button>
+					</div>
+					<p class="artist"></p>
+					<p class="title"></p>
+				</div>
+				<div class="col-md-3 nouv-image-titre">
+					<div class="album-button-hover">
+						<img class="nouv-album" src="images/POP/coldplay.png">
+						<button class="button-album"></button>
+						<button class="button-album-bis"></button>
+					</div>
+					<p class="artist"></p>
+					<p class="title"></p>
+				</div>
+
+			</div>
+
+			<div class="row">
+				<h3>Des ambiances pour vous</h3>
+				<div class="col-md-12">
+				</div>
+			</div>
+
+			<div class="profil-content col-md-12 playlists-liste">
+				<div class="col-md-3 nouv-image-titre">
+					<div class="album-button-hover">
+						<img class="nouv-album" src="images/POP/coldplay.png">
+						<button class="button-album"></button>
+						<button class="button-album-bis"></button>
+					</div>
+					<p class="artist"></p>
+					<p class="title"></p>
+				</div>
+				<div class="col-md-3 nouv-image-titre">
+					<div class="album-button-hover">
+						<img class="nouv-album" src="images/POP/coldplay.png">
+						<button class="button-album"></button>
+						<button class="button-album-bis"></button>
+					</div>
+					<p class="artist"></p>
+					<p class="title"></p>
+				</div>
+				<div class="col-md-3 nouv-image-titre">
+					<div class="album-button-hover">
+						<img class="nouv-album" src="images/POP/coldplay.png">
+						<button class="button-album"></button>
+						<button class="button-album-bis"></button>
+					</div>
+					<p class="artist"></p>
+					<p class="title"></p>
+				</div>
+				<div class="col-md-3 nouv-image-titre">
+					<div class="album-button-hover">
+						<img class="nouv-album" src="images/POP/coldplay.png">
+						<button class="button-album"></button>
+						<button class="button-album-bis"></button>
+					</div>
+					<p class="artist"></p>
+					<p class="title"></p>
+				</div>
+
 			</div>
 			<div class="row">
-				<h3 class="col-md-6 col-md-offset-1"> Les nouveautés pour vous  </h3>
+				<h3>Vos futurs artistes préférés </h3>
+				<div class="col-md-12">
+
+
+
+
+
+				</div>
 			</div>
-			<div class="row">
-				<h3 class="col-md-6 col-md-offset-1"> Les nouveautés pour vous  </h3>
+
+			<div class="profil-content col-md-12 playlists-liste">
+				<div class="col-md-3 nouv-image-titre">
+					<div class="album-button-hover">
+						<img class="nouv-album" src="images/POP/coldplay.png">
+						<button class="button-album"></button>
+						<button class="button-album-bis"></button>
+					</div>
+					<p class="artist"></p>
+					<p class="title"></p>
+				</div>
+				<div class="col-md-3 nouv-image-titre">
+					<div class="album-button-hover">
+						<img class="nouv-album" src="images/POP/coldplay.png">
+						<button class="button-album"></button>
+						<button class="button-album-bis"></button>
+					</div>
+					<p class="artist"></p>
+					<p class="title"></p>
+				</div>
+				<div class="col-md-3 nouv-image-titre">
+					<div class="album-button-hover">
+						<img class="nouv-album" src="images/POP/coldplay.png">
+						<button class="button-album"></button>
+						<button class="button-album-bis"></button>
+					</div>
+					<p class="artist"></p>
+					<p class="title"></p>
+				</div>
+				<div class="col-md-3 nouv-image-titre">
+					<div class="album-button-hover">
+						<img class="nouv-album" src="images/POP/coldplay.png">
+						<button class="button-album"></button>
+						<button class="button-album-bis"></button>
+					</div>
+					<p class="artist"></p>
+					<p class="title"></p>
+				</div>
+
 			</div>
 
 		</div>
@@ -239,7 +375,7 @@
 				</div>
 
 				<div class="col-lg-4 album album-cache block">
-					<img src="images/event.png">
+					<img src="">
 				</div>
 			</div>
 
@@ -250,13 +386,13 @@
 						<h3 class="artist"></h3>
 						<p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat" </p>
 					</div>
-								<div class="col-lg-3 col-sm-6 album">
-					<img src="">
-				</div>
+					<div class="col-lg-3 col-sm-6 album">
+						<img src="">
+					</div>
 				</div>
 
 
-	
+
 				<div class="block">
 					<div class="col-lg-3 col-sm-12 album">
 						<img src="">
@@ -273,7 +409,7 @@
 
 			<div class="row">
 				<div class="col-lg-4 col-sm-4 album block">
-					<img src="images/nuitsClaires.png" />
+					<img src="" />
 				</div>
 
 				<div class="col-lg-5 album col-sm-5">
@@ -289,9 +425,2892 @@
 
 
 		</div>
+		<div id="mix" class="container-fluid overflow">
+
+			<div id="contenu-mix">
+				<header>
+					<h2>MIX</h2>
+				</header>
+
+				<h3 class="genre">Musiques du Monde</h3>
+				<div class="nouveautes-content col-md-12">
 
 
+					<div class="well">
+						<div id="myCarousel">
+
+							<!-- Carousel items -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/MDM/BOLLY.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/MDM/BRESIL.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/MDM/FARNIENTE.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/MDM/FORRO.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+								<div class="item ">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/MDM/BOLLY.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/MDM/BRESIL.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/MDM/FARNIENTE.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/MDM/FORRO.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+								<div class="item ">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/MDM/BOLLY.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/MDM/BRESIL.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/MDM/FARNIENTE.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/MDM/FORRO.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+							</div>
+							<!--/carousel-inner-->
+						</div>
+						<!--/myCarousel-->
+					</div>
+					<!--/well-->
+				</div>
+
+				<h3 class="genre">Sport</h3>
+				<div class="nouveautes-content col-md-12">
+
+
+					<div class="well">
+						<div id="myCarousel" class="">
+
+							<!-- Carousel items -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/SPORT/CONCENTRA.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/SPORT/SPORT.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/SPORT/SURF.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/SPORT/ZEN.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+								<div class="item ">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/SPORT/CONCENTRA.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/SPORT/SPORT.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/SPORT/SURF.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/SPORT/ZEN.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+								<div class="item ">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/SPORT/CONCENTRA.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/SPORT/SPORT.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/SPORT/SURF.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/SPORT/ZEN.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+							</div>
+							<!--/carousel-inner-->
+						</div>
+						<!--/myCarousel-->
+					</div>
+					<!--/well-->
+				</div>
+				<h3 class="genre">Quotidien</h3>
+				<div class="nouveautes-content col-md-12">
+
+
+					<div class="well">
+						<div id="myCarousel" class="">
+
+							<!-- Carousel items -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/QUOT/COINDUFEU.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/QUOT/DINERCHANDEL.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/QUOT/JOURDEPLUIE.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/QUOT/VALENTINES.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+								<div class="item ">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/QUOT/COINDUFEU.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/QUOT/DINERCHANDEL.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/QUOT/JOURDEPLUIE.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/QUOT/VALENTINES.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+								<div class="item ">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/QUOT/COINDUFEU.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/QUOT/DINERCHANDEL.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/QUOT/JOURDEPLUIE.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/QUOT/VALENTINES.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+							</div>
+							<!--/carousel-inner-->
+
+
+						</div>
+						<!--/myCarousel-->
+					</div>
+					<!--/well-->
+				</div>
+				<h3 class="genre">Au fil du Temps</h3>
+				<div class="nouveautes-content col-md-12">
+
+
+					<div class="well">
+						<div id="myCarousel" class="">
+
+							<!-- Carousel items -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/FDT/AN60.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/FDT/AN80.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/FDT/AN90.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/FDT/AN20.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+								<div class="item ">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/FDT/AN60.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/FDT/AN80.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/FDT/AN90.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/FDT/AN20.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+								<div class="item ">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/FDT/AN60.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+							</div>
+							<!--/carousel-inner-->
+						</div>
+						<!--/myCarousel-->
+					</div>
+					<!--/well-->
+				</div>
+				<h3 class="genre">Genres</h3>
+				<div class="nouveautes-content col-md-12">
+
+
+					<div class="well">
+						<div id="myCarousel" class="">
+
+							<!-- Carousel items -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/GENRE/COUNTRY.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/GENRE/DISCO.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/GENRE/OLDSCH.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/GENRE/R&R.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+								<div class="item ">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/GENRE/COUNTRY.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/GENRE/DISCO.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/GENRE/OLDSCH.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/GENRE/R&R.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+								<div class="item ">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/GENRE/COUNTRY.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/GENRE/DISCO.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/GENRE/OLDSCH.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/GENRE/R&R.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+							</div>
+							<!--/carousel-inner-->
+						</div>
+						<!--/myCarousel-->
+					</div>
+					<!--/well-->
+				</div>
+			</div>
+		</div>
+		<div id="profil" class="container-fluid overflow">
+			<div class="cover"></div>
+			<header></header>
+			<div id="fiche-profil">
+				<div id="profil3">
+					<img id="pp" src="images/pp.png">
+
+				</div>
+				<button id="btn-flow">FLOW</button>
+				<button id="btn-compte">MON COMPTE</button>
+				<nav>
+					<ul>
+						<li id="onglet-musique">Ma musique</li>
+						<li id="onglet-coups-coeur">Coups de coeur</li>
+						<li id="onglet-playlists">Playlists</li>
+						<li id="onglet-album">Albums</li>
+						<li id="onglet-artistes">Artistes</li>
+					</ul>
+				</nav>
+
+			</div>
+
+			<div class="profil-content col-md-12 profil-active ma-musique">
+				<div class="col-md-12 gris">
+					<!-- titre -->
+					<div class="col-md-4">
+						<p>Little Numbers</p>
+					</div>
+					<!-- artiste -->
+					<div class="col-md-4">
+						<p>BOY</p>
+					</div>
+					<!-- album -->
+					<div class="col-md-3">
+						<p>Lorem Ipsum</p>
+					</div>
+					<!-- durée -->
+					<div class="col-md-1">
+						<p>3:44</p>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<!-- titre -->
+					<div class="col-md-4">
+						<p>Little Numbers</p>
+					</div>
+					<!-- artiste -->
+					<div class="col-md-4">
+						<p>BOY</p>
+					</div>
+					<!-- album -->
+					<div class="col-md-3">
+						<p>Lorem Ipsum</p>
+					</div>
+					<!-- durée -->
+					<div class="col-md-1">
+						<p>3:44</p>
+					</div>
+				</div>
+				<div class="col-md-12 gris">
+					<!-- titre -->
+					<div class="col-md-4">
+						<p>Little Numbers</p>
+					</div>
+					<!-- artiste -->
+					<div class="col-md-4">
+						<p>BOY</p>
+					</div>
+					<!-- album -->
+					<div class="col-md-3">
+						<p>Lorem Ipsum</p>
+					</div>
+					<!-- durée -->
+					<div class="col-md-1">
+						<p>3:44</p>
+					</div>
+				</div>
+				<div class="col-md-12 ">
+					<!-- titre -->
+					<div class="col-md-4">
+						<p>Little Numbers</p>
+					</div>
+					<!-- artiste -->
+					<div class="col-md-4">
+						<p>BOY</p>
+					</div>
+					<!-- album -->
+					<div class="col-md-3">
+						<p>Lorem Ipsum</p>
+					</div>
+					<!-- durée -->
+					<div class="col-md-1">
+						<p>3:44</p>
+					</div>
+				</div>
+				<div class="col-md-12 gris">
+					<!-- titre -->
+					<div class="col-md-4">
+						<p>Little Numbers</p>
+					</div>
+					<!-- artiste -->
+					<div class="col-md-4">
+						<p>BOY</p>
+					</div>
+					<!-- album -->
+					<div class="col-md-3">
+						<p>Lorem Ipsum</p>
+					</div>
+					<!-- durée -->
+					<div class="col-md-1">
+						<p>3:44</p>
+					</div>
+				</div>
+				<div class="col-md-12 ">
+					<!-- titre -->
+					<div class="col-md-4">
+						<p>Little Numbers</p>
+					</div>
+					<!-- artiste -->
+					<div class="col-md-4">
+						<p>BOY</p>
+					</div>
+					<!-- album -->
+					<div class="col-md-3">
+						<p>Lorem Ipsum</p>
+					</div>
+					<!-- durée -->
+					<div class="col-md-1">
+						<p>3:44</p>
+					</div>
+				</div>
+			</div>
+			<div class="profil-content col-md-12 coups-coeur">
+				<div class="col-md-12 gris">
+					<!-- titre -->
+					<div class="col-md-4">
+						<p>Little Numbers</p>
+					</div>
+					<!-- artiste -->
+					<div class="col-md-4">
+						<p>BOY</p>
+					</div>
+					<!-- album -->
+					<div class="col-md-3">
+						<p>Lorem Ipsum</p>
+					</div>
+					<!-- durée -->
+					<div class="col-md-1">
+						<p>3:44</p>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<!-- titre -->
+					<div class="col-md-4">
+						<p>Little Numbers</p>
+					</div>
+					<!-- artiste -->
+					<div class="col-md-4">
+						<p>BOY</p>
+					</div>
+					<!-- album -->
+					<div class="col-md-3">
+						<p>Lorem Ipsum</p>
+					</div>
+					<!-- durée -->
+					<div class="col-md-1">
+						<p>3:44</p>
+					</div>
+				</div>
+				<div class="col-md-12 gris">
+					<!-- titre -->
+					<div class="col-md-4">
+						<p>Little Numbers</p>
+					</div>
+					<!-- artiste -->
+					<div class="col-md-4">
+						<p>BOY</p>
+					</div>
+					<!-- album -->
+					<div class="col-md-3">
+						<p>Lorem Ipsum</p>
+					</div>
+					<!-- durée -->
+					<div class="col-md-1">
+						<p>3:44</p>
+					</div>
+				</div>
+				<div class="col-md-12 ">
+					<!-- titre -->
+					<div class="col-md-4">
+						<p>Little Numbers</p>
+					</div>
+					<!-- artiste -->
+					<div class="col-md-4">
+						<p>BOY</p>
+					</div>
+					<!-- album -->
+					<div class="col-md-3">
+						<p>Lorem Ipsum</p>
+					</div>
+					<!-- durée -->
+					<div class="col-md-1">
+						<p>3:44</p>
+					</div>
+				</div>
+				<div class="col-md-12 gris">
+					<!-- titre -->
+					<div class="col-md-4">
+						<p>Little Numbers</p>
+					</div>
+					<!-- artiste -->
+					<div class="col-md-4">
+						<p>BOY</p>
+					</div>
+					<!-- album -->
+					<div class="col-md-3">
+						<p>Lorem Ipsum</p>
+					</div>
+					<!-- durée -->
+					<div class="col-md-1">
+						<p>3:44</p>
+					</div>
+				</div>
+				<div class="col-md-12 ">
+					<!-- titre -->
+					<div class="col-md-4">
+						<p>Little Numbers</p>
+					</div>
+					<!-- artiste -->
+					<div class="col-md-4">
+						<p>BOY</p>
+					</div>
+					<!-- album -->
+					<div class="col-md-3">
+						<p>Lorem Ipsum</p>
+					</div>
+					<!-- durée -->
+					<div class="col-md-1">
+						<p>3:44</p>
+					</div>
+				</div>
+			</div>
+			<div class="profil-content col-md-12 playlists-liste">
+				<div class="nouv-image-titre">
+					<div class="album-button-hover">
+						<img class="nouv-album" src="images/POP/coldplay.png">
+						<button class="button-album"></button>
+						<button class="button-album-bis"></button>
+					</div>
+					<p class="artist"></p>
+					<p class="title"></p>
+				</div>
+				<div class="nouv-image-titre">
+					<div class="album-button-hover">
+						<img class="nouv-album" src="images/POP/coldplay.png">
+						<button class="button-album"></button>
+						<button class="button-album-bis"></button>
+					</div>
+					<p class="artist"></p>
+					<p class="title"></p>
+				</div>
+				<div class="nouv-image-titre">
+					<div class="album-button-hover">
+						<img class="nouv-album" src="images/POP/coldplay.png">
+						<button class="button-album"></button>
+						<button class="button-album-bis"></button>
+					</div>
+					<p class="artist"></p>
+					<p class="title"></p>
+				</div>
+				<div class="nouv-image-titre">
+					<div class="album-button-hover">
+						<img class="nouv-album" src="images/POP/coldplay.png">
+						<button class="button-album"></button>
+						<button class="button-album-bis"></button>
+					</div>
+					<p class="artist"></p>
+					<p class="title"></p>
+				</div>
+				<div class="nouv-image-titre">
+					<div class="album-button-hover">
+						<img class="nouv-album" src="images/POP/coldplay.png">
+						<button class="button-album"></button>
+						<button class="button-album-bis"></button>
+					</div>
+					<p class="artist"></p>
+					<p class="title"></p>
+				</div>
+				<div class="nouv-image-titre">
+					<div class="album-button-hover">
+						<img class="nouv-album" src="images/POP/coldplay.png">
+						<button class="button-album"></button>
+						<button class="button-album-bis"></button>
+					</div>
+					<p class="artist"></p>
+					<p class="title"></p>
+				</div>
+				<div class="nouv-image-titre">
+					<div class="album-button-hover">
+						<img class="nouv-album" src="images/POP/coldplay.png">
+						<button class="button-album"></button>
+						<button class="button-album-bis"></button>
+					</div>
+					<p class="artist"></p>
+					<p class="title"></p>
+				</div>
+				<div class="nouv-image-titre">
+					<div class="album-button-hover">
+						<img class="nouv-album" src="images/POP/coldplay.png">
+						<button class="button-album"></button>
+						<button class="button-album-bis"></button>
+					</div>
+					<p class="artist"></p>
+					<p class="title"></p>
+				</div>
+			</div>
+
+			<div class="profil-content col-md-12 albums-profil">
+				<div class="nouv-image-titre">
+					<div class="album-button-hover">
+						<img class="nouv-album" src="images/POP/coldplay.png">
+						<button class="button-album"></button>
+						<button class="button-album-bis"></button>
+					</div>
+					<p class="artist"></p>
+					<p class="title"></p>
+				</div>
+				<div class="nouv-image-titre">
+					<div class="album-button-hover">
+						<img class="nouv-album" src="images/POP/coldplay.png">
+						<button class="button-album"></button>
+						<button class="button-album-bis"></button>
+					</div>
+					<p class="artist"></p>
+					<p class="title"></p>
+				</div>
+				<div class="nouv-image-titre">
+					<div class="album-button-hover">
+						<img class="nouv-album" src="images/POP/coldplay.png">
+						<button class="button-album"></button>
+						<button class="button-album-bis"></button>
+					</div>
+					<p class="artist"></p>
+					<p class="title"></p>
+				</div>
+				<div class="nouv-image-titre">
+					<div class="album-button-hover">
+						<img class="nouv-album" src="images/POP/coldplay.png">
+						<button class="button-album"></button>
+						<button class="button-album-bis"></button>
+					</div>
+					<p class="artist"></p>
+					<p class="title"></p>
+				</div>
+				<div class="nouv-image-titre">
+					<div class="album-button-hover">
+						<img class="nouv-album" src="images/POP/coldplay.png">
+						<button class="button-album"></button>
+						<button class="button-album-bis"></button>
+					</div>
+					<p class="artist"></p>
+					<p class="title"></p>
+				</div>
+				<div class="nouv-image-titre">
+					<div class="album-button-hover">
+						<img class="nouv-album" src="images/POP/coldplay.png">
+						<button class="button-album"></button>
+						<button class="button-album-bis"></button>
+					</div>
+					<p class="artist"></p>
+					<p class="title"></p>
+				</div>
+				<div class="nouv-image-titre">
+					<div class="album-button-hover">
+						<img class="nouv-album" src="images/POP/coldplay.png">
+						<button class="button-album"></button>
+						<button class="button-album-bis"></button>
+					</div>
+					<p class="artist"></p>
+					<p class="title"></p>
+				</div>
+				<div class="nouv-image-titre">
+					<div class="album-button-hover">
+						<img class="nouv-album" src="images/POP/coldplay.png">
+						<button class="button-album"></button>
+						<button class="button-album-bis"></button>
+					</div>
+					<p class="artist"></p>
+					<p class="title"></p>
+				</div>
+			</div>
+
+			<div class="profil-content col-md-12 artistes-profil">
+				<div class="nouv-image-titre">
+					<div class="album-button-hover">
+						<img class="nouv-album" src="images/POP/coldplay.png">
+						<button class="button-album"></button>
+						<button class="button-album-bis"></button>
+					</div>
+					<p class="artist"></p>
+					<p class="title"></p>
+				</div>
+				<div class="nouv-image-titre">
+					<div class="album-button-hover">
+						<img class="nouv-album" src="images/POP/coldplay.png">
+						<button class="button-album"></button>
+						<button class="button-album-bis"></button>
+					</div>
+					<p class="artist"></p>
+					<p class="title"></p>
+				</div>
+				<div class="nouv-image-titre">
+					<div class="album-button-hover">
+						<img class="nouv-album" src="images/POP/coldplay.png">
+						<button class="button-album"></button>
+						<button class="button-album-bis"></button>
+					</div>
+					<p class="artist"></p>
+					<p class="title"></p>
+				</div>
+				<div class="nouv-image-titre">
+					<div class="album-button-hover">
+						<img class="nouv-album" src="images/POP/coldplay.png">
+						<button class="button-album"></button>
+						<button class="button-album-bis"></button>
+					</div>
+					<p class="artist"></p>
+					<p class="title"></p>
+				</div>
+				<div class="nouv-image-titre">
+					<div class="album-button-hover">
+						<img class="nouv-album" src="images/POP/coldplay.png">
+						<button class="button-album"></button>
+						<button class="button-album-bis"></button>
+					</div>
+					<p class="artist"></p>
+					<p class="title"></p>
+				</div>
+				<div class="nouv-image-titre">
+					<div class="album-button-hover">
+						<img class="nouv-album" src="images/POP/coldplay.png">
+						<button class="button-album"></button>
+						<button class="button-album-bis"></button>
+					</div>
+					<p class="artist"></p>
+					<p class="title"></p>
+				</div>
+				<div class="nouv-image-titre">
+					<div class="album-button-hover">
+						<img class="nouv-album" src="images/POP/coldplay.png">
+						<button class="button-album"></button>
+						<button class="button-album-bis"></button>
+					</div>
+					<p class="artist"></p>
+					<p class="title"></p>
+				</div>
+				<div class="nouv-image-titre">
+					<div class="album-button-hover">
+						<img class="nouv-album" src="images/POP/coldplay.png">
+						<button class="button-album"></button>
+						<button class="button-album-bis"></button>
+					</div>
+					<p class="artist"></p>
+					<p class="title"></p>
+				</div>
+			</div>
+
+
+		</div>
+		<div id="ambiance" class="container-fluid overflow">
+			<div id="contenu-ambiance">
+				<header>
+					<h2>AMBIANCES</h2>
+				</header>
+
+				<h3 class="genre">Soirée</h3>
+				<div class="ambiance-content col-md-12">
+					<div class="well">
+						<div id="myCarousel" class="carousel slide">
+
+							<!-- Carousel items -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/SOIREE/SO1.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/SOIREE/SO2.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/SOIREE/SO3.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/SOIREE/SO4.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+								<div class="item ">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/SOIREE/SO1.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/SOIREE/SO2.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/SOIREE/SO3.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/SOIREE/SO4.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+								<div class="item ">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/SOIREE/SO1.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/SOIREE/SO2.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/SOIREE/SO3.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/SOIREE/SO4.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+							</div>
+							<!--/carousel-inner-->
+
+							<a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+						</div>
+						<!--/myCarousel-->
+					</div>
+					<!--/well-->
+				</div>
+
+
+				<h3 class="genre">Sport</h3>
+				<div class="nouveautes-content col-md-12">
+					<div class="well">
+						<div id="myCarousel" class="carousel slide">
+							<!-- Carousel items -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/SPORT/SP1.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/SPORT/SP2.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/SPORT/SP3.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/SPORT/SP4.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+								<div class="item ">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/SPORT/SP1.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/SPORT/SP2.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/SPORT/SP3.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/SPORT/SP4.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+								<div class="item ">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/SPORT/SP1.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/SPORT/SP2.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/SPORT/SP3.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/SPORT/SP4.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+							</div>
+							<!--/carousel-inner-->
+
+							<a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+						</div>
+						<!--/myCarousel-->
+					</div>
+					<!--/well-->
+				</div>
+
+
+				<h3 class="genre">Voyage</h3>
+				<div class="nouveautes-content col-md-12">
+					<div class="well">
+						<div id="myCarousel" class="carousel slide">
+
+							<!-- Carousel items -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/VOYAGE/VO1.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/VOYAGE/VO2.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/VOYAGE/VO3.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/VOYAGE/VO4.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+								<div class="item ">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/VOYAGE/VO1.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/VOYAGE/VO2.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/VOYAGE/VO3.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/VOYAGE/VO4.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+								<div class="item ">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/VOYAGE/VO1.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/VOYAGE/VO2.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/VOYAGE/VO3.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/VOYAGE/VO4.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+							</div>
+							<!--/carousel-inner-->
+
+							<a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+						</div>
+						<!--/myCarousel-->
+					</div>
+					<!--/well-->
+				</div>
+
+
+				<h3 class="genre">Amour</h3>
+				<div class="nouveautes-content col-md-12">
+					<div class="well">
+						<div id="myCarousel" class="carousel slide">
+
+							<!-- Carousel items -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/AMOUR/AM1.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/AMOUR/AM2.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/AMOUR/AM3.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/AMOUR/AM4.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+								<div class="item ">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/AMOUR/AM1.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/AMOUR/AM2.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/AMOUR/AM3.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/AMOUR/AM4.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+								<div class="item ">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/AMOUR/AM1.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/AMOUR/AM2.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/AMOUR/AM3.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/AMOUR/AM4.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+							</div>
+							<!--/carousel-inner-->
+
+							<a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+						</div>
+						<!--/myCarousel-->
+					</div>
+					<!--/well-->
+				</div>
+
+
+				<h3 class="genre">Détente</h3>
+				<div class="nouveautes-content col-md-12">
+					<div class="well">
+						<div id="myCarousel" class="carousel slide">
+
+							<!-- Carousel items -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/DETENTE/DET1.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/DETENTE/DET2.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/DETENTE/DET3.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/DETENTE/DET4.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+								<div class="item ">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/DETENTE/DET1.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/DETENTE/DET2.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/DETENTE/DET3.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/DETENTE/DET4.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+								<div class="item ">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/DETENTE/DET1.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/DETENTE/DET2.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/DETENTE/DET3.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/DETENTE/DET4.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+							</div>
+							<!--/carousel-inner-->
+
+							<a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+						</div>
+						<!--/myCarousel-->
+					</div>
+					<!--/well-->
+				</div>
+
+				<h3 class="genre">Quotidien</h3>
+				<div class="nouveautes-content col-md-12">
+					<div class="well">
+						<div id="myCarousel" class="carousel slide">
+
+							<!-- Carousel items -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/QUOTI/QUO1.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/QUOTI/QUO2.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/QUOTI/QUO3.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/QUOTI/QUO4.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+								<div class="item ">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/QUOTI/QUO1.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/QUOTI/QUO2.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/QUOTI/QUO3.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/QUOTI/QUO4.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+								<div class="item ">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/QUOTI/QUO1.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/QUOTI/QUO2.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/QUOTI/QUO3.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/QUOTI/QUO4.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+							</div>
+							<!--/carousel-inner-->
+
+							<a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+						</div>
+						<!--/myCarousel-->
+					</div>
+					<!--/well-->
+				</div>
+
+				<h3 class="genre">Triste</h3>
+				<div class="nouveautes-content col-md-12">
+					<div class="well">
+						<div id="myCarousel" class="carousel slide">
+
+							<!-- Carousel items -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/TRISTE/TR1.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/TRISTE/TR2.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/TRISTE/TR3.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/TRISTE/TR4.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+								<div class="item ">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/TRISTE/TR1.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/TRISTE/TR2.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/TRISTE/TR3.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/TRISTE/TR4.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+								<div class="item ">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/TRISTE/TR1.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/TRISTE/TR2.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/TRISTE/TR3.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/TRISTE/TR4.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+							</div>
+							<!--/carousel-inner-->
+
+							<a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+						</div>
+						<!--/myCarousel-->
+					</div>
+					<!--/well-->
+				</div>
+
+
+				<h3 class="genre">Cuisine</h3>
+				<div class="nouveautes-content col-md-12">
+					<div class="well">
+						<div id="myCarousel" class="carousel slide">
+
+							<!-- Carousel items -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/CUISINE/DI1.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/CUISINE/DI2.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/CUISINE/DI3.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/CUISINE/DI4.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+								<div class="item ">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/CUISINE/DI1.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/CUISINE/DI2.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/CUISINE/DI3.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/CUISINE/DI4.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+								<div class="item ">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/CUISINE/DI1.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/CUISINE/DI2.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/CUISINE/DI3.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#"><img class="nouv-album" src="images/CUISINE/DI4.png" alt="Image" class="img-responsive">
+											</a>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+							</div>
+							<!--/carousel-inner-->
+
+							<a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+						</div>
+						<!--/myCarousel-->
+					</div>
+					<!--/well-->
+				</div>
+
+
+			</div>
+		</div>
+		<div id="nouveautes" class="container-fluid overflow">
+
+			<div id="contenu-nouveautes">
+				<header>
+					<h2>Nouveautés</h2>
+				</header>
+
+				<h3 class="genre">HOUSE</h3>
+				<div class="nouveautes-content col-md-12">
+					<div class="well">
+						<div id="myCarousel" class="carousel slide">
+
+							<!-- Carousel items -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+								<div class="item ">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+								<div class="item ">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+							</div>
+							<!--/carousel-inner--><a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+
+							<a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+						</div>
+						<!--/myCarousel-->
+					</div>
+					<!--/well-->
+				</div>
+
+				<h3 class="genre">POP</h3>
+				<div class="nouveautes-content col-md-12">
+					<div class="well">
+						<div id="myCarousel" class="carousel slide">
+
+							<!-- Carousel items -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+								<div class="item ">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+								<div class="item ">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+							</div>
+							<!--/carousel-inner--><a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+
+							<a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+						</div>
+						<!--/myCarousel-->
+					</div>
+					<!--/well-->
+				</div>
+
+				<h3 class="genre">ROCK</h3>
+				<div class="nouveautes-content col-md-12">
+					<div class="well">
+						<div id="myCarousel" class="carousel slide">
+
+							<!-- Carousel items -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+								<div class="item ">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+								<div class="item ">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+							</div>
+							<!--/carousel-inner--><a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+
+							<a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+						</div>
+						<!--/myCarousel-->
+					</div>
+					<!--/well-->
+				</div>
+
+				<h3 class="genre">ELECTRO</h3>
+				<div class="nouveautes-content col-md-12">
+					<div class="well">
+						<div id="myCarousel" class="carousel slide">
+
+							<!-- Carousel items -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+								<div class="item ">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+								<div class="item ">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+							</div>
+							<!--/carousel-inner--><a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+
+							<a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+						</div>
+						<!--/myCarousel-->
+					</div>
+					<!--/well-->
+				</div>
+
+				<h3 class="genre">RAP &amp; HIP/HOP</h3>
+				<div class="nouveautes-content col-md-12">
+					<div class="well">
+						<div id="myCarousel" class="carousel slide">
+
+							<!-- Carousel items -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+								<div class="item ">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+								<div class="item ">
+									<div class="row">
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+										<div class="col-sm-3 album-button-hover">
+											<a href="#">
+												<img class="nouv-album" src="" alt="Image" class="img-responsive">
+											</a>
+											<div class="nouv-image-titre">
+												<p class="artist"></p>
+												<p class="title"></p>
+											</div>
+											<button class="button-album"></button>
+											<button class="button-album-bis"></button>
+										</div>
+									</div>
+									<!--/row-->
+								</div>
+								<!--/item-->
+							</div>
+							<!--/carousel-inner--><a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+
+							<a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+						</div>
+						<!--/myCarousel-->
+					</div>
+					<!--/well-->
+				</div>
+			</div>
+		</div>
+
+
+		<div id="top" class="container-fluid overflow">
+			<div class="row">
+				<header class="col-md-12">
+					<h2 class="col-md-4 col-md-offset-1">TOPS</h2>
+				</header>
+			</div>
+
+			<div class="row">
+				<h3 class="col-xs-11 col-xs-offset-1"> Le top des morceaux </h3>
+			</div>
+
+			<div class="row">
+				<!-- Grille ligne top morceaux -->
+				<div class="col-sm-offset-1 col-sm-10" id="topLignes">
+					<div id="topTrack" class="col-md-6 topTrack">
+						<img alt="" src="" >
+						<span class="artist"></span> - <span class="title"></span>
+					</div>
+					<div id="topTrack" class="col-md-6 topTrack">
+						<img alt="" src="" >
+						<span class="artist"></span> - <span class="title"></span>
+					</div>
+					<div id="topTrack" class="col-md-6 topTrack">
+						<img alt="" src="" >
+						<span class="artist"></span> - <span class="title"></span>
+					</div>
+					<div id="topTrack" class="col-md-6 topTrack">
+						<img alt="" src="" >
+						<span class="artist"></span> - <span class="title"></span>
+					</div>
+					<div id="topTrack" class="col-md-6 topTrack">
+						<img alt="" src="" >
+						<span class="artist"></span> - <span class="title"></span>
+					</div>
+					<div id="topTrack" class="col-md-6 topTrack">
+						<img alt="" src="" >
+						<span class="artist"></span> - <span class="title"></span>
+					</div>
+					<div id="topTrack" class="col-md-6 topTrack">
+						<img alt="" src="" >
+						<span class="artist"></span> - <span class="title"></span>
+					</div>
+					<div id="topTrack" class="col-md-6 topTrack">
+						<img alt="" src="" >
+						<span class="artist"></span> - <span class="title"></span>
+					</div>
+					<div id="topTrack" class="col-md-6 topTrack">
+						<img alt="" src="" >
+						<span class="artist"></span> - <span class="title"></span>
+					</div>
+					<div id="topTrack" class="col-md-6 topTrack">
+						<img alt="" src="" >
+						<span class="artist"></span> - <span class="title"></span>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="row">
+				<div class="col-sm-6 col-xs-12 duoBouton" id="genre">
+					<p> Genres </p>
+				</div>
+				<div class="col-sm-6 col-xs-12 duoBouton" id="autourDeVous">
+					<p> Autour de vous </p>
+
+				</div>
+			</div>
+
+			<!------ Le top des découvertes ---------->
+			<div class="row">
+				<h3 class="col-md-6 col-md-offset-1"> Le top des découvertes </h3>
+			</div>
+			<div class="row">
+				<div class="sliderImg col-md-10 col-md-offset-1">
+					<div class="topTrack slider col-md-2"><img alt="" src=""></div>
+					<div class="topTrack slider col-md-2"><img alt="" src=""> </div>
+					<div class="topTrack slider col-md-2"><img alt="" src=""> </div>
+					<div class="topTrack slider col-md-2"><img alt="" src=""> </div>
+				</div>
+			</div>
+
+			<!--------- TOPS ALBUMS  ------------>
+			<div class="col-md-5 col-md-offset-1">
+				<h3 class="col-md-12"> Le top des albums </h3>
+
+				<div class="row">
+					<div class="col-md-offset-1" id="topLignes">
+						<!-- Grille ligne top morceaux -->
+						<div class="topTrack">
+							<img alt="" src="" >
+							<span class="artist"></span> - <span class="title"></span>
+						</div>
+						<div class="topTrack">
+							<img alt="" src="" >
+							<span class="artist"></span> - <span class="title"></span>
+						</div>
+						<div class="topTrack">
+							<img alt="" src="" >
+							<span class="artist"></span> - <span class="title"></span>
+						</div>
+						<div class="topTrack">
+							<img alt="" src="" >
+							<span class="artist"></span> - <span class="title"></span>
+						</div>
+						<div class="topTrack">
+							<img alt="" src="" >
+							<span class="artist"></span> - <span class="title"></span>
+						</div>
+						<div class="topTrack">
+							<img alt="" src="" >
+							<span class="artist"></span> - <span class="title"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--------- TOPS ALBUMS  ------------>
+			<div class="col-md-5">
+				<h3 class="col-md-12 col-md-offset-1"> Le top des artistes </h3>
+
+				<div class="row">
+					<div class="col-md-offset-1" id="topLignes">
+						<!-- Grille ligne top morceaux -->
+						<div class="topTrack">
+							<img alt="" src="" >
+							<span class="artist"></span> - <span class="title"></span>
+						</div>
+						<div class="topTrack">
+							<img alt="" src="" >
+							<span class="artist"></span> - <span class="title"></span>
+						</div>
+						<div class="topTrack">
+							<img alt="" src="" >
+							<span class="artist"></span> - <span class="title"></span>
+						</div>
+						<div class="topTrack">
+							<img alt="" src="" >
+							<span class="artist"></span> - <span class="title"></span>
+						</div>
+						<div class="topTrack">
+							<img alt="" src="" >
+							<span class="artist"></span> - <span class="title"></span>
+						</div>
+						<div class="topTrack">
+							<img alt="" src="" >
+							<span class="artist"></span> - <span class="title"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="vide col-md-12"></div>
+
+
+
+		</div>
 	</div>
+
+	<!------PLAY BAR------->
 
 	<div id="play-bar">
 		<div class="relativeBtn">

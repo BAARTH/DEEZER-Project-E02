@@ -188,7 +188,7 @@ input[type=text] {
 	top: 0;
 	background-color: #23232C;
 	height: 100%;
-	width: 220px;
+	width: 215px;
 }
 
 #toggleButton-right {
@@ -217,7 +217,6 @@ input[type=text] {
 	background-color: #23232C;
 	width: 100%;
 	margin: 0 0;
-	font-family: 'Roboto', sans-serif;
 	line-height: 1.5;
 	font-weight: 300;
 	color: #888;
@@ -570,7 +569,7 @@ ul.tabs.active {
 
 .heartBtn {
 	position: absolute;
-	right: 480px;
+	left: 920px;
 	top: 15px;
 }
 
@@ -581,8 +580,9 @@ ul.tabs.active {
 		
 ********************************/
 
-.container-fluid * {
+.container-fluid {
 	padding-right: 0;
+	padding: 0;
 }
 
 #content {
@@ -591,6 +591,7 @@ ul.tabs.active {
 
 .overflow {
 	overflow-y: scroll;
+	overflow: hidden;
 }
 
 
@@ -600,9 +601,13 @@ ul.tabs.active {
 		
 ********************************/
 
+#accueil {
+	margin-bottom: 25px;
+}
+
 #accueil .bgFlow {
 	background-image: url(../images/phrrell.jpg);
-	height: 750px;
+	height: 740px;
 	text-align: center;
 }
 
@@ -642,8 +647,8 @@ ul.tabs.active {
 }
 
 #accueil .slider {
+	width: 620px;
 	height: 350px;
-	position: relative;
 	overflow: hidden;
 }
 
@@ -652,17 +657,165 @@ ul.tabs.active {
 	position: absolute;
 	top: 0;
 	left: 0;
+	resize: both;
 }
 
 #accueil h3 {
 	font-size: 25px;
 	color: dimgrey;
 	margin-top: 50px;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
+	padding-left: 45px;
 }
 
 #accueil #ecouter {
-	color: red;
+	position: absolute;
+	left: 200px;
+	bottom: 20px;
+	text-transform: uppercase;
+	outline: none;
+	background-color: #007FEB;
+	color: #FFFFFF;
+	transition: all 150ms ease-in-out;
+	appearance: none;
+	border: none;
+	border-radius: 0.6em;
+	cursor: pointer;
+	display: flex;
+	align-self: center;
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1;
+	margin: 20px;
+	padding: 1.2em 2.8em;
+	text-decoration: none;
+	text-align: center;
+	border-bottom: 2px #0062b2 solid;
+}
+
+#accueil #ecouter:hover {
+	color: midnightblue;
+}
+
+#accueil .container-fluid {
+	padding: 0;
+}
+
+#accueil #contenu-nouveautes header {
+	background-image: url(../images/nouv.png);
+	height: 200px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#accueil h2 {
+	margin: 0;
+	padding-top: 75px;
+	padding-left: 20px;
+	color: white;
+	font-size: 50px;
+}
+
+#accueil #contenu-nouveautes h2 {
+	margin: 0;
+	color: #ffffff;
+	font-size: 40px;
+	padding-left: 50px;
+	padding-top: 80px;
+}
+
+#accueil .genre {
+	font-weight: 600;
+	color: #000000;
+	padding-left: 35px;
+	float: left;
+	width: 100%;
+}
+
+#accueil #nouveautes-content {
+	padding-left: 3%;
+	padding-bottom: 5%;
+}
+
+#accueil .nouv-album {
+	height: 200px;
+	transition: all .2s ease-in-out;
+}
+
+#accueil .album-button-hover:hover img {
+	transform: scale(1.1);
+	-webkit-filter: blur(0.6px);
+	/* Chrome, Safari, Opera */
+	filter: blur(0.6px);
+	cursor: pointer;
+}
+
+#accueil .album-button-hover:hover button {
+	opacity: 0.8;
+}
+
+#accueil .album-button-hover p {
+	min-width: 150px;
+}
+
+#accueil .nouv-image-titre {
+	float: left;
+}
+
+#accueil .nouv-albums {
+	clear: both;
+	float: left;
+}
+
+#accueil .nouv-image-titre p {
+	padding-left: 12%;
+}
+
+#accueil .nouv-image-titre p:first-of-type {
+	color: #000000;
+	font-weight: 700;
+}
+
+#accueil .nouv-image-titre p:nth-of-type(2) {
+	color: #5c5a5a;
+	font-size: 12px;
+	margin-top: -8px;
+	font-weight: 700;
+	margin-bottom: 40px;
+}
+
+#accueil .album-button-hover {
+	position: relative;
+}
+
+#accueil .button-album {
+	position: absolute;
+	top: 50%;
+	left: 67%;
+	transform: translate(-50%, -50%);
+	background: none;
+	border: none;
+	background-image: url(../images/icon/play.png);
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 30px;
+	opacity: 0;
+	transition: all 500ms;
+}
+
+#accueil .button-album-bis {
+	position: absolute;
+	top: 50%;
+	left: 42%;
+	transform: translate(-50%, -50%);
+	background: none;
+	width: 30px;
+	height: 30px;
+	border: none;
+	background-image: url(../images/icon/coeur.png);
+	background-repeat: no-repeat;
+	opacity: 0;
+	transition: all 500ms;
 }
 
 
@@ -756,9 +909,785 @@ ul.tabs.active {
 	}
 }
 
-img {
+#decouvertes img,
+#mix img,
+#ambiance img {
 	width: 100%;
 	height: 100%;
+}
+
+
+/********************************
+		
+				PAGE MIX
+		
+********************************/
+
+#mix {
+	margin-bottom: 40px;
+}
+
+#mix #contenu-mix header {
+	background-image: url(../images/mixmusic.png);
+	height: 200px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#mix h2 {
+	margin: 0;
+	padding-top: 75px;
+	padding-left: 20px;
+	color: white;
+	font-size: 50px;
+}
+
+#mix #contenu-mix h2 {
+	margin: 0;
+	color: #ffffff;
+	font-size: 40px;
+	padding-left: 50px;
+	padding-top: 80px;
+}
+
+#mix .genre {
+	font-weight: 600;
+	color: #000000;
+	padding-left: 35px;
+	float: left;
+	width: 100%;
+}
+
+#mix #mix-content {
+	padding-left: 3%;
+	padding-bottom: 5%;
+}
+
+#mix .album-button-hover:hover img {
+	transform: scale(1.1);
+	-webkit-filter: blur(1px);
+	/* Chrome, Safari, Opera */
+	filter: blur(1px);
+	cursor: pointer;
+}
+
+#mix .album-button-hover:hover button {
+	opacity: 0.8;
+}
+
+#mix .nouv-image-titre {
+	float: left;
+}
+
+#mix .nouv-albums {
+	clear: both;
+	float: left;
+}
+
+#mix .nouv-image-titre p {
+	padding-left: 12%;
+}
+
+#mix .nouv-image-titre p:first-of-type {
+	color: #000000;
+	font-weight: 700;
+}
+
+#mix .nouv-image-titre p:nth-of-type(2) {
+	color: #5c5a5a;
+	font-size: 12px;
+	margin-top: -8px;
+	font-weight: 700;
+}
+
+#mix .album-button-hover {
+	position: relative;
+}
+
+#mix .button-album {
+	position: absolute;
+	top: 50%;
+	left: 72%;
+	transform: translate(-50%, -50%);
+	background: none;
+	border: none;
+	background-image: url(../images/icon/play.png);
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 30px;
+	opacity: 0;
+	transition: all 500ms;
+}
+
+#mix .button-album-bis {
+	position: absolute;
+	top: 50%;
+	left: 40%;
+	transform: translate(-50%, -50%);
+	background: none;
+	width: 30px;
+	height: 30px;
+	border: none;
+	background-image: url(../images/icon/coeur.png);
+	background-repeat: no-repeat;
+	opacity: 0;
+	transition: all 500ms;
+}
+
+#mix .carousel-control {
+	padding-top: 10%;
+	width: 5%;
+}
+
+#mix .well {
+	border: none;
+	background: none;
+	box-shadow: none;
+	padding-top: 0px;
+}
+
+#mix .carousel-control.left {
+	background: none;
+	color: #000000;
+	font-size: 60px;
+	transform: translateX(-26px) translateY(-34px);
+}
+
+#mix .carousel-control.right {
+	background: none;
+	color: #000000;
+	font-size: 60px;
+	transform: translateX(35px) translateY(-34px);
+}
+
+#mix .carousel-inner {
+	overflow: visible;
+}
+
+
+/********************************
+		
+				PAGE MIX
+		
+********************************/
+
+#ambiance {
+	margin-bottom: 40px;
+}
+
+#ambiance #contenu-ambiance header {
+	background-image: url(../images/mixmusic.png);
+	height: 200px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#ambiance h2 {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding-top: 75px;
+	padding-left: 20px;
+	color: white;
+	font-size: 50px;
+}
+
+#ambiance #contenu-ambiance h2 {
+	margin: 0;
+	color: #ffffff;
+	font-size: 40px;
+	padding-left: 50px;
+	padding-top: 80px;
+}
+
+#ambiance .genre {
+	font-weight: 600;
+	color: #000000;
+	padding-left: 35px;
+	float: left;
+	width: 100%;
+}
+
+#ambiance #ambiance-content {
+	padding-left: 3%;
+	padding-bottom: 5%;
+}
+
+#ambiance .album-button-hover:hover img {
+	transform: scale(1.1);
+	-webkit-filter: blur(1px);
+	/* Chrome, Safari, Opera */
+	filter: blur(1px);
+	cursor: pointer;
+}
+
+#ambiance .album-button-hover:hover button {
+	opacity: 0.8;
+}
+
+#ambiance .nouv-image-titre {
+	float: left;
+}
+
+#ambiance .nouv-albums {
+	clear: both;
+	float: left;
+}
+
+#ambiance .nouv-image-titre p {
+	padding-left: 12%;
+}
+
+#ambiance .nouv-image-titre p:first-of-type {
+	color: #000000;
+	font-weight: 700;
+}
+
+#ambiance .nouv-image-titre p:nth-of-type(2) {
+	color: #5c5a5a;
+	font-size: 12px;
+	margin-top: -8px;
+	font-weight: 700;
+}
+
+#ambiance .album-button-hover {
+	position: relative;
+}
+
+#ambiance .button-album {
+	position: absolute;
+	top: 50%;
+	left: 72%;
+	transform: translate(-50%, -50%);
+	background: none;
+	border: none;
+	background-image: url(../images/icon/play.png);
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 30px;
+	opacity: 0;
+	transition: all 500ms;
+}
+
+#ambiance .button-album-bis {
+	position: absolute;
+	top: 50%;
+	left: 40%;
+	transform: translate(-50%, -50%);
+	background: none;
+	width: 30px;
+	height: 30px;
+	border: none;
+	background-image: url(../images/icon/coeur.png);
+	background-repeat: no-repeat;
+	opacity: 0;
+	transition: all 500ms;
+}
+
+#ambiance .carousel-control {
+	padding-top: 10%;
+	width: 5%;
+}
+
+#ambiance .well {
+	border: none;
+	background: none;
+	box-shadow: none;
+	padding-top: 0px;
+}
+
+#ambiance .carousel-control.left {
+	background: none;
+	color: #000000;
+	font-size: 60px;
+	transform: translateX(-26px) translateY(-34px);
+}
+
+#ambiance .carousel-control.right {
+	background: none;
+	color: #000000;
+	font-size: 60px;
+	transform: translateX(35px) translateY(-34px);
+}
+
+#ambiance .carousel-inner {
+	overflow: visible;
+}
+
+
+/********************************
+		
+				PAGE PROFIL
+		
+********************************/
+
+#profil header {
+	background-image: url(../images/background.jpg);
+	height: 300px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#profil #pp {
+	height: 170px;
+	width: auto;
+	position: relative;
+	top: -95px;
+	margin-left: 10%;
+	display: block;
+}
+
+#profil #btn-flow {
+	outline: none;
+	position: relative;
+	top: -220px;
+	left: 290px;
+	background-color: #007FEB;
+	color: #FFFFFF;
+	transition: all 150ms ease-in-out;
+	appearance: none;
+	border: none;
+	border-radius: 0.6em;
+	cursor: pointer;
+	display: flex;
+	align-self: center;
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1;
+	margin: 20px;
+	padding: 1.2em 2.8em;
+	text-decoration: none;
+	text-align: center;
+	border-bottom: 2px #0062b2 solid;
+}
+
+#profil #btn-flow:hover {
+	border-bottom: 2px #007FEB solid;
+}
+
+#profil #btn-compte {
+	outline: none;
+	position: relative;
+	top: -284px;
+	left: 434px;
+	background-color: #ECECEC;
+	color: #7a727d;
+	transition: all 150ms ease-in-out;
+	appearance: none;
+	border: none;
+	border-radius: 0.6em;
+	cursor: pointer;
+	display: flex;
+	align-self: center;
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1;
+	margin: 20px;
+	padding: 1.2em 2.8em;
+	text-decoration: none;
+	text-align: center;
+	border-bottom: 2px #7a727d solid;
+}
+
+#profil #btn-compte:hover {
+	border-bottom: 2px #ECECEC solid;
+}
+
+#profil #fiche-profil ul {
+	color: #7a727d;
+	margin-top: -220px;
+	font-weight: 700;
+	border-bottom: 1px solid #DDD;
+}
+
+#profil #fiche-profil li {
+	display: inline-block;
+	cursor: pointer;
+	margin-left: 50px;
+	padding: 0 15px 10px 15px;
+	border-bottom: 3px solid transparent;
+	transition: all 350ms;
+}
+
+#profil #fiche-profil li.active,
+#profil #fiche-profil li:hover {
+	color: #161515;
+	border-bottom: 3px solid #007FEB;
+}
+
+#profil .profil-content {
+	margin-bottom: 50px;
+}
+
+#profil .profil-content p {
+	color: #4b4b4b;
+	margin-bottom: 0px;
+}
+
+#profil .profil-content {
+	display: none;
+}
+
+#profil .profil-active {
+	display: block;
+}
+
+#profil .albums-profil .nouv-image-titre p:nth-of-type(2) {
+	color: #5c5a5a;
+	font-size: 12px;
+	margin-top: 0px;
+	font-weight: 700;
+}
+
+#profil .artistes-profil .nouv-image-titre p:nth-of-type(2) {
+	color: #5c5a5a;
+	font-size: 12px;
+	margin-top: 0px;
+	font-weight: 700;
+}
+
+#profil .playlists-liste .nouv-image-titre p:nth-of-type(2) {
+	color: #5c5a5a;
+	font-size: 12px;
+	margin-top: 0px;
+	font-weight: 700;
+}
+
+#profil .playlists-liste {
+	margin-left: 37px;
+}
+
+#profil .albums-profil {
+	margin-left: 37px;
+}
+
+#profil .artistes-profil {
+	margin-left: 37px;
+}
+
+#profil .nouv-album {
+	height: 200px;
+	transition: all .2s ease-in-out;
+}
+
+#profil .album-button-hover:hover img {
+	transform: scale(1.1);
+	-webkit-filter: blur(1px);
+	/* Chrome, Safari, Opera */
+	filter: blur(1px);
+	cursor: pointer;
+}
+
+#profil .album-button-hover:hover button {
+	opacity: 0.8;
+}
+
+#profil .nouv-image-titre {
+	float: left;
+}
+
+#profil .nouv-albums {
+	clear: both;
+	float: left;
+}
+
+#profil .nouv-image-titre p {
+	padding-left: 12%;
+}
+
+#profil .nouv-image-titre p:first-of-type {
+	color: #000000;
+	font-weight: 700;
+}
+
+#profil .nouv-image-titre p:nth-of-type(2) {
+	color: #5c5a5a;
+	font-size: 12px;
+	margin-top: -8px;
+	font-weight: 700;
+}
+
+#profil .album-button-hover {
+	position: relative;
+}
+
+#profil .button-album {
+	position: absolute;
+	top: 50%;
+	left: 72%;
+	transform: translate(-50%, -50%);
+	background: none;
+	border: none;
+	background-image: url(../images/icon/play.png);
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 30px;
+	opacity: 0;
+	transition: all 500ms;
+}
+
+#profil .button-album-bis {
+	position: absolute;
+	top: 50%;
+	left: 40%;
+	transform: translate(-50%, -50%);
+	background: none;
+	width: 30px;
+	height: 30px;
+	border: none;
+	background-image: url(../images/icon/coeur.png);
+	background-repeat: no-repeat;
+	opacity: 0;
+	transition: all 500ms;
+}
+
+
+/********************************
+		
+				PAGE NOUVEAUTES
+		
+********************************/
+
+#nouveautes {
+	margin-bottom: 70px;
+}
+
+#nouveautes #contenu-nouveautes header {
+	background-image: url(../images/nouv.png);
+	height: 200px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#nouveautes h2 {
+	margin: 0;
+	padding-top: 75px;
+	padding-left: 20px;
+	color: white;
+	font-size: 50px;
+	text-transform: uppercase;
+}
+
+#nouveautes #contenu-nouveautes h2 {
+	margin: 0;
+	color: #ffffff;
+	font-size: 40px;
+	padding-left: 50px;
+	padding-top: 80px;
+}
+
+#nouveautes .genre {
+	font-weight: 600;
+	color: #000000;
+	padding-left: 35px;
+	float: left;
+	width: 100%;
+}
+
+#nouveautes #nouveautes-content {
+	padding-left: 3%;
+	padding-bottom: 5%;
+}
+
+#nouveautes .nouv-album {
+	height: 200px;
+	transition: all .2s ease-in-out;
+}
+
+#nouveautes .album-button-hover:hover img {
+	transform: scale(1.1);
+	-webkit-filter: blur(0.6px);
+	/* Chrome, Safari, Opera */
+	filter: blur(0.6px);
+	cursor: pointer;
+}
+
+#nouveautes .album-button-hover:hover button {
+	opacity: 0.8;
+}
+
+#nouveautes .album-button-hover p {
+	min-width: 150px;
+}
+
+#nouveautes .nouv-image-titre {
+	float: left;
+	position: absolute;
+}
+
+#nouveautes .nouv-albums {
+	clear: both;
+	float: left;
+}
+
+#nouveautes .nouv-image-titre p {
+	padding-left: 12%;
+}
+
+#nouveautes .nouv-image-titre p:first-of-type {
+	color: #000000;
+	font-weight: 700;
+}
+
+#nouveautes .nouv-image-titre p:nth-of-type(2) {
+	color: #5c5a5a;
+	font-size: 12px;
+	margin-top: -8px;
+	font-weight: 700;
+}
+
+#nouveautes .album-button-hover {
+	position: relative;
+}
+
+#nouveautes .button-album {
+	position: absolute;
+	top: 50%;
+	left: 75%;
+	transform: translate(-50%, -50%);
+	background: none;
+	border: none;
+	background-image: url(../images/icon/play.png);
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 30px;
+	opacity: 0;
+	transition: all 500ms;
+}
+
+#nouveautes .button-album-bis {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: none;
+	width: 30px;
+	height: 30px;
+	border: none;
+	background-image: url(../images/icon/coeur.png);
+	background-repeat: no-repeat;
+	opacity: 0;
+	transition: all 500ms;
+}
+
+#nouveautes .carousel-control {
+	padding-top: 10%;
+	width: 5%;
+}
+
+#nouveautes .well {
+	border: none;
+	background: none;
+	box-shadow: none;
+	padding-top: 0px;
+}
+
+#nouveautes .carousel-control.left {
+	background: none;
+	color: #000000;
+	font-size: 60px;
+	transform: translateX(-26px) translateY(-34px);
+}
+
+#nouveautes .carousel-control.right {
+	background: none;
+	color: #000000;
+	font-size: 60px;
+	transform: translateX(35px) translateY(-34px);
+}
+
+#nouveautes .carousel-inner {
+	overflow: visible;
+}
+
+
+/********************************
+		
+				PAGE TOP
+		
+********************************/
+
+#top header {
+	height: 200px;
+	background-image: url(../images/bgTop.jpeg);
+	background-size: cover;
+	margin: 0;
+	background-repeat: no-repeat;
+}
+
+#top h2 {
+	margin: 0;
+	padding-top: 75px;
+	color: white;
+	font-size: 50px;
+}
+
+#top h3 {
+	color: grey;
+}
+
+#top #topLignes {
+	margin-top: 30px;
+}
+
+#top #topLignes div {
+	border-bottom: grey solid 1px;
+}
+
+#top #topLignes img {
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+}
+
+#top #topLignes p {
+	display: inline-block;
+	margin-left: 30px;
+	margin-bottom: 0px;
+	line-height: 40px;
+	color: grey;
+}
+
+#top .duoBouton {
+	height: 70px;
+	background-color: aquamarine;
+	margin-top: 40px;
+}
+
+#top #genre {
+	background-image: url(../images/genre.png);
+	background-position: center;
+	text-transform: uppercase;
+	color: white;
+	text-align: center;
+	font-size: 23px;
+}
+
+#top #autourDeVous {
+	background-image: url(../images/autour_de_vous.jpg);
+	background-position: center;
+	text-transform: uppercase;
+	color: white;
+	text-align: center;
+	font-size: 23px;
+}
+
+#top .your-class {
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+#top .slider {
+	height: 120px;
+	margin-left: 50px;
+}
+
+#top .vide {
+	height: 80px;
+}
+
+#top .slider img{
+	height: 120px;
 }
 
 
@@ -769,9 +1698,15 @@ img {
 ********************************/
 
 #accueil,
-#decouvertes {
+#decouvertes,
+#mix,
+#ambiance,
+#profil,
+#nouveautes,
+#top {
 	display: none;
 }
+
 .pageActive {
 	display: block;
 }

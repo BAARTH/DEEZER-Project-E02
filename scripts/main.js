@@ -123,13 +123,13 @@ $(document).ready(function () {
 		button_playlist();
 		playlist();
 	});
-	
 
-/********************************
-		
-	GENERATION ALAEATOIRE VIA JSON
-		
-********************************/
+
+	/********************************
+			
+		GENERATION ALAEATOIRE VIA JSON
+			
+	********************************/
 
 	var trackData = track.tracks.data;
 
@@ -152,42 +152,203 @@ $(document).ready(function () {
 		$(this).find("img").attr('src', trackAlbum);
 		$(this).find("a").attr('data-src', trackLink);
 	});
-	
-	
 
-	
-/********************************
-		
-				GESTION DISPLAY
-		
-********************************/
-	
-	$(".menuAccueil").click(function(e){
+
+
+
+	/********************************
+			
+					GESTION DISPLAY
+			
+	********************************/
+	$("#accueil").addClass("pageActive");
+	$(".pageActive").show();
+	$(".nouv-image-titre").each(function () {
+		nombre1 = Math.floor(Math.random() * trackData.length);
+		trackLink = trackData[nombre1].preview;
+		trackAlbum = trackData[nombre1].album.cover_big;
+		trackArtist = trackData[nombre1].artist.name;
+		trackTitle = trackData[nombre1].title;
+		$(this).find(".title").html(trackTitle);
+		$(this).find(".artist").html(trackArtist);
+		$(this).find("img").attr('src', trackAlbum);
+	});
+
+
+	$(".menuAccueil").click(function (e) {
 		e.preventDefault;
+		$(".nouv-image-titre").each(function () {
+			nombre1 = Math.floor(Math.random() * trackData.length);
+			trackLink = trackData[nombre1].preview;
+			trackAlbum = trackData[nombre1].album.cover_big;
+			trackArtist = trackData[nombre1].artist.name;
+			trackTitle = trackData[nombre1].title;
+			$(this).find(".title").html(trackTitle);
+			$(this).find(".artist").html(trackArtist);
+			$(this).find("img").attr('src', trackAlbum);
+		});
 		$(".pageActive").hide();
 		$(".pageActive").removeClass("pageActive");
 		$("#accueil").addClass("pageActive");
 		$(".pageActive").show();
 	});
-	
-	$(".menuDiscover").click(function(e){
+
+	$(".menuDiscover").click(function (e) {
 		e.preventDefault;
-		$("#decouvertes .block").each(function(){
-		nombre1 = Math.floor(Math.random() * trackData.length);
-				trackLink = trackData[nombre1].preview;
-		trackAlbum = trackData[nombre1].album.cover_big;
-		trackArtist = trackData[nombre1].artist.name;
-				$(this).find(".artist").html(trackArtist);
-		$(this).find("img").attr('src', trackAlbum);
-	});
+		$("#decouvertes .block").each(function () {
+			nombre1 = Math.floor(Math.random() * trackData.length);
+			trackLink = trackData[nombre1].preview;
+			trackAlbum = trackData[nombre1].album.cover_big;
+			trackArtist = trackData[nombre1].artist.name;
+			$(this).find(".artist").html(trackArtist);
+			$(this).find("img").attr('src', trackAlbum);
+		});
 		$(".pageActive").hide();
 		$(".pageActive").removeClass("pageActive");
-					
 		$("#decouvertes").addClass("pageActive");
 		$(".pageActive").show();
-		
 	});
-	
-	
-	
+
+	$(".menuMix").click(function (e) {
+		e.preventDefault;
+		$(".pageActive").hide();
+		$(".pageActive").removeClass("pageActive");
+		$("#mix").addClass("pageActive");
+		$(".pageActive").show();
+	});
+
+	$(".menuProfil").click(function (e) {
+		e.preventDefault;
+		$(".nouv-image-titre").each(function () {
+			nombre1 = Math.floor(Math.random() * trackData.length);
+			trackLink = trackData[nombre1].preview;
+			trackAlbum = trackData[nombre1].album.cover_big;
+			trackArtist = trackData[nombre1].artist.name;
+			$(this).find(".title").html(trackTitle);
+			$(this).find(".artist").html(trackArtist);
+			$(this).find("img").attr('src', trackAlbum);
+		});
+		$(".pageActive").hide();
+		$(".pageActive").removeClass("pageActive");
+		$("#profil").addClass("pageActive");
+		$(".pageActive").show();
+	});
+
+	$(".menuAmbiance").click(function (e) {
+		e.preventDefault;
+		$(".pageActive").hide();
+		$(".pageActive").removeClass("pageActive");
+		$("#ambiance").addClass("pageActive");
+		$(".pageActive").show();
+	});
+
+	$(".menuNew").click(function (e) {
+		e.preventDefault;
+		$(".album-button-hover").each(function () {
+			nombre1 = Math.floor(Math.random() * trackData.length);
+			trackLink = trackData[nombre1].preview;
+			trackAlbum = trackData[nombre1].album.cover_big;
+			trackArtist = trackData[nombre1].artist.name;
+			trackTitle = trackData[nombre1].title;
+			$(this).find(".title").html(trackTitle);
+			$(this).find(".artist").html(trackArtist);
+			$(this).find("img").attr('src', trackAlbum);
+		});
+		$(".pageActive").hide();
+		$(".pageActive").removeClass("pageActive");
+		$("#nouveautes").addClass("pageActive");
+		$(".pageActive").show();
+	});
+
+	$(".menuTop").click(function (e) {
+		e.preventDefault;
+		$(".topTrack").each(function () {
+			nombre1 = Math.floor(Math.random() * trackData.length);
+			trackLink = trackData[nombre1].preview;
+			trackAlbum = trackData[nombre1].album.cover_big;
+			trackArtist = trackData[nombre1].artist.name;
+			trackTitle = trackData[nombre1].title;
+			console.log(this);
+			$(this).find(".title").html(trackTitle);
+			$(this).find(".artist").html(trackArtist);
+			$(this).find("img").attr('src', trackAlbum);
+		});
+		$(".pageActive").hide();
+		$(".pageActive").removeClass("pageActive");
+		$("#top").addClass("pageActive");
+		$(".pageActive").show();
+	});
+
+
+
+
+	/********************************
+				
+			GESTION DISPLAY PAGE PROFIL
+				
+		********************************/
+	$('#onglet-album, .menuAlbum').on('click', function () {
+		$('.profil-content').removeClass('profil-active');
+		$('.albums-profil').addClass('profil-active');
+	});
+
+	$('#onglet-musique').on('click', function () {
+		$('.profil-content').removeClass('profil-active');
+		$('.ma-musique').addClass('profil-active');
+	});
+
+	$('#onglet-playlists, .menuPlaylist').on('click', function () {
+		$('.profil-content').removeClass('profil-active');
+		$('.playlists-liste').addClass('profil-active');
+	});
+
+	$('#onglet-coups-coeur, .menuCoeur').on('click', function () {
+		$('.profil-content').removeClass('profil-active');
+		$('.coups-coeur').addClass('profil-active');
+	});
+
+	$('#onglet-artistes, .menuPodcast, .menuApp').on('click', function () {
+		$('.profil-content').removeClass('profil-active');
+		$('.artistes-profil').addClass('profil-active');
+	});
+
+	$(function ($) {
+
+		var $slider = $('.slider');
+		var $slide = 'li';
+		var $transition_time = 1000;
+		var $time_between_slides = 3000;
+
+		function slides() {
+			return $slider.find($slide);
+		}
+
+		slides().fadeOut();
+		slides().first().addClass('active');
+		slides().first().fadeIn($transition_time);
+
+		$interval = setInterval(
+			function () {
+				var $i = $slider.find($slide + '.active').index();
+
+				slides().eq($i).removeClass('active');
+				slides().eq($i).fadeOut($transition_time);
+
+				if (slides().length == $i + 1) $i = -1;
+
+				slides().eq($i + 1).fadeIn($transition_time);
+				slides().eq($i + 1).addClass('active');
+			}, $transition_time + $time_between_slides
+		);
+
+	});
+
+	//******** CAROUSEL********//
+
+	$('.carousel-control').on('click', function (e) {
+		e.preventDefault();
+		console.log('click');
+	})
+
+
 });
