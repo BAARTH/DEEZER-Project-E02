@@ -125,17 +125,18 @@ $(document).ready(function () {
 	});
 	
 
-	
-	
-
-
+/********************************
+		
+	GENERATION ALAEATOIRE VIA JSON
+		
+********************************/
 
 	var trackData = track.tracks.data;
 
 	var nombre1 = Math.floor(Math.random() * trackData.length);
 	var numberOfTrack = $(".track");
 	var trackLink = trackData[nombre1].preview;
-	var trackAlbum = trackData[nombre1].album.cover_small;
+	var trackAlbum = trackData[nombre1].album;
 	var trackTitle = trackData[nombre1].title;
 	var trackArtist = trackData[nombre1].artist.name;
 
@@ -151,4 +152,42 @@ $(document).ready(function () {
 		$(this).find("img").attr('src', trackAlbum);
 		$(this).find("a").attr('data-src', trackLink);
 	});
+	
+	
+
+	
+/********************************
+		
+				GESTION DISPLAY
+		
+********************************/
+	
+	$(".menuAccueil").click(function(e){
+		e.preventDefault;
+		$(".pageActive").hide();
+		$(".pageActive").removeClass("pageActive");
+		$("#accueil").addClass("pageActive");
+		$(".pageActive").show();
+	});
+	
+	$(".menuDiscover").click(function(e){
+		e.preventDefault;
+		$("#decouvertes .block").each(function(){
+		nombre1 = Math.floor(Math.random() * trackData.length);
+				trackLink = trackData[nombre1].preview;
+		trackAlbum = trackData[nombre1].album.cover_big;
+		trackArtist = trackData[nombre1].artist.name;
+				$(this).find(".artist").html(trackArtist);
+		$(this).find("img").attr('src', trackAlbum);
+	});
+		$(".pageActive").hide();
+		$(".pageActive").removeClass("pageActive");
+					
+		$("#decouvertes").addClass("pageActive");
+		$(".pageActive").show();
+		
+	});
+	
+	
+	
 });

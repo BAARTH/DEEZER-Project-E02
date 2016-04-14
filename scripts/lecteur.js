@@ -25,13 +25,14 @@
 				CHARGEMENT DE LA PISTE AU CLIC
 		
 		********************************/
-
-		$('.trackList #playable, .historyList #playable').click(function (e) {
+function load(){
+		$('.trackList #playable, .historyList #playable	').click(function (e) {
 			e.preventDefault();
 			$(this).addClass('playing').siblings().removeClass('playing');
-			var title = $(this).find(".title").html();
-			var artist = $(this).find(".artist").html();
-			var album = $(this).find("img").attr('src');
+			title = $(this).find(".title").html();
+			artist = $(this).find(".artist").html();
+			album = $(this).find("img").attr('src');
+			link = $('a', this).attr('data-src');
 
 			$(".acc_history").prepend('<li id="playable" class="ui-state-default track"><a href="#" data-src=""> <img src=""><span class="title"></span></br><span class="artist"></span></a></li>');
 
@@ -42,13 +43,15 @@
 			$(this).find(".artist").html(artist);
 			$("#play-bar img, #history li:first-child img").attr('src', album);
 			$(this).find("img").attr('src', album);
-			console.log(album);
 			audio.play();
 			$("#pause").addClass("active");
 			$("#play").removeClass("active");
 
 
 		});
+}
+		
+		load();
 
 
 		/********************************
@@ -93,6 +96,25 @@
 				next.click();
 			});
 
+
+		});
+
+		/********************************
+				
+							GESTION DU BOUTON COEUR
+				
+		********************************/
+
+		$("#coeur").click(function () {
+
+			$(".heart").prepend('<li id="playable" class="ui-state-default track"><a href="#" data-src=""> <img src=" "><span class="title"></span></br><span class="artist"></span></a></li>');
+
+			$(".heart li:first-child a").attr('data-src', link);
+			$(".heart li:first-child .title").html(title);
+			$(".heart li:first-child .artist").html(artist);
+
+			$(".heart li:first-child img").attr('src', album);
+load();
 		});
 
 	});

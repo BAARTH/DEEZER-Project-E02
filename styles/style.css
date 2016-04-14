@@ -1,3 +1,9 @@
+/********************************
+		
+					GLOBAL
+		
+********************************/
+
 html,
 body {
 	height: 100%;
@@ -9,6 +15,13 @@ body {
 	position: relative;
 }
 
+
+/********************************
+		
+					NAV BAR
+		
+********************************/
+
 #deezer-logo img {
 	width: 115px;
 }
@@ -17,9 +30,6 @@ body {
 	margin-left: 50px;
 	margin-top: 12px;
 }
-
-
-/* BAR DE RECHERCHE */
 
 .bar-recherche {
 	padding-top: 12px;
@@ -91,9 +101,6 @@ input[type=text] {
 	margin-top: 20px;
 }
 
-
-/* NAV BAR */
-
 #nav-bar {
 	position: fixed;
 	left: 0;
@@ -162,8 +169,18 @@ input[type=text] {
 	-o-transform: rotate(-180deg);
 }
 
+#nav-bar a {
+	color: #FFFFFF;
+	text-decoration: none;
+	cursor: pointer;
+}
 
-/* RIGHT BAR */
+
+/********************************
+		
+					RIGHT BAR
+		
+********************************/
 
 #right-bar {
 	position: fixed;
@@ -187,7 +204,11 @@ input[type=text] {
 }
 
 
-/* TABS */
+/********************************
+		
+					MENU RIGHT BAR
+		
+********************************/
 
 .tab {
 	margin-bottom: 20px;
@@ -250,6 +271,7 @@ ul.tabs.active {
 
 .tabs_item .track {
 	padding: 2px 0;
+	background-color: #f6f6f6;
 	border-bottom: 1px #FFFFFF solid;
 }
 
@@ -280,7 +302,11 @@ ul.tabs.active {
 }
 
 
-/* PLAYLIST */
+/********************************
+		
+							PLAYLIST
+		
+********************************/
 
 .acc h2 {
 	color: #C2C2CA;
@@ -412,10 +438,11 @@ ul.tabs.active {
 }
 
 
-/* PLAYLIST MANAGER */
-
-
-/* PLAY BAR */
+/********************************
+		
+								PLAY BAR
+		
+		********************************/
 
 #play-bar {
 	position: fixed;
@@ -427,24 +454,25 @@ ul.tabs.active {
 	bottom: 0;
 }
 
-.relativeBtn{
+.relativeBtn {
 	width: 100%;
 	height: 100%;
 	position: relative;
 }
 
-#play-bar .containerInfos{
-width: 250px;
-	position:absolute;
-	top:0px;
-	left:225px;
-	font-size:12px;
+#play-bar .containerInfos {
+	width: 250px;
+	position: absolute;
+	top: 0px;
+	left: 225px;
+	font-size: 12px;
 	line-height: 1px;
 }
 
-.artTitle{
+.artTitle {
 	margin-top: 12px;
 }
+
 #play-bar .containerInfos .title {
 	display: block;
 	float: left;
@@ -453,12 +481,11 @@ width: 250px;
 }
 
 #play-bar .containerInfos .artist {
-	margin-top:20px;
-		display: block;
+	margin-top: 20px;
+	display: block;
 	float: left;
 	font-style: italic;
 	font-weight: 600;
-
 }
 
 #play-bar .containerInfos img {
@@ -466,40 +493,40 @@ width: 250px;
 	width: 50px;
 	margin-right: 10px;
 }
-	
+
 .containerBtn {
-	position:absolute;
-	bottom:12px;
-	width:220px;
+	position: absolute;
+	bottom: 12px;
+	width: 220px;
 	display: inline-block;
 	text-align: center;
 }
 
-.containerBtn i{
-	font-size:25px;
-	margin-right:20px;
+.containerBtn i {
+	font-size: 25px;
+	margin-right: 20px;
 }
 
-.containerBtn i:hover{
-	color:#FFFFFF;
+.relativeBtn i:hover {
+	color: #FFFFFF;
 }
 
-.playBtn{
+.playBtn {
 	display: inline-block;
 }
 
-.playBtn i{
-	font-size:30px;
+.playBtn i {
+	font-size: 30px;
 	display: none;
 }
 
-.playBtn i.active{
-	display:inline-block;
+.playBtn i.active {
+	display: inline-block;
 }
 
 .audiojs {
 	position: absolute;
-	left:500px;
+	left: 500px;
 	height: 100%;
 	background: #23232C;
 	overflow: hidden;
@@ -511,101 +538,240 @@ width: 250px;
 	box-shadow: none;
 	display: inline-block;
 }
+
 .audiojs .loaded {
 	height: 5px;
 	background: #000000;
 }
+
 .audiojs .progress {
 	height: 5px;
 	background: #FFFFFF;
 }
-.audiojs .scrubber {
 
+.audiojs .scrubber {
 	margin-top: 22px;
 	height: 5px;
 	border: none;
 }
+
 .audiojs .play-pause {
-		display: none;
+	display: none;
 }
 
-.audiojs .time{
+.audiojs .time {
 	border: none;
-		margin-top: 7px;
+	margin-top: 7px;
 }
 
-.wrapper{
+.wrapper {
 	display: inline-block;
 }
 
+.heartBtn {
+	position: absolute;
+	right: 480px;
+	top: 15px;
+}
 
 
-/* HOME CONTENU */
+/********************************
+		
+					HOME CONTENT
+		
+********************************/
 
 .container-fluid * {
 	padding-right: 0;
 }
+
 #content {
 	margin-left: 220px;
 }
+
 .overflow {
 	overflow-y: scroll;
 }
-.bgFlow {
+
+
+/********************************
+		
+				PAGE ACCUEIL
+		
+********************************/
+
+#accueil .bgFlow {
 	background-image: url(../images/phrrell.jpg);
 	height: 750px;
 	text-align: center;
 }
-.bgFlow h2 {
+
+#accueil .bgFlow h2 {
 	font-size: 40px;
 	color: white;
 	margin-bottom: 50px;
 }
-.bgFlow p {
+
+#accueil .bgFlow p {
 	font-size: 50px;
 	color: white;
 }
-.bgFlow img {
+
+#accueil .bgFlow img {
 	width: 70px;
 	height: 70px;
 	margin-bottom: 50px;
 }
-.bgFlow #trait {
+
+#accueil .bgFlow #trait {
 	height: 2px;
 	width: 100px;
 	margin: auto;
 	background-color: white;
 }
-.valign {
+
+#accueil .valign {
 	vertical-align: middle;
 	height: 100%;
 	display: inline-block;
 }
-#encadrement {
+
+#accueil #encadrement {
 	vertical-align: middle;
 	display: inline-block;
 }
-.slider {
-	/*width: 580px; /* Update to your slider width */
-	
+
+#accueil .slider {
 	height: 350px;
-	/* Update to your slider height */
-	
 	position: relative;
 	overflow: hidden;
 }
-.slider li {
+
+#accueil .slider li {
 	display: none;
 	position: absolute;
 	top: 0;
 	left: 0;
 }
-h3 {
+
+#accueil h3 {
 	font-size: 25px;
 	color: dimgrey;
 	margin-top: 50px;
 	margin-bottom: 50px;
 }
-#ecouter {
+
+#accueil #ecouter {
 	color: red;
+}
+
+
+/********************************
+		
+				PAGE DECOUVERTE
+		
+********************************/
+
+#decouvertes header {
+	height: 200px;
+	background-image: url(../images/BG_decouverte.jpg);
+	background-size: cover;
+	background-position: bottom;
+	margin: 0;
+	background-repeat: no-repeat;
+}
+
+#decouvertes h2 {
+	margin: 0;
+	padding-top: 75px;
+	color: white;
+	font-size: 50px;
+	text-transform: uppercase;
+}
+
+#decouvertes .noir {
+	background-color: black;
+}
+
+#decouvertes .video h3 {
+	text-align: center;
+}
+
+#decouvertes .video p {
+	font-size: 18px;
+	margin: 15px;
+}
+
+#decouvertes .arrow-left {
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-right: 10px solid white;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+#decouvertes .album {
+	height: 250px;
+	padding: 0;
+}
+
+#decouvertes .album h3 {
+	text-align: center;
+}
+
+#decouvertes .album p {
+	font-size: 18px;
+	margin: 15px;
+}
+
+#decouvertes .player {
+	text-align: center;
+}
+
+#decouvertes .player img {
+	width: 60px;
+	margin-top: 40px;
+}
+
+#decouvertes #grosTitre {
+	font-size: 40px;
+	color: grey;
+	text-align: center;
+	margin-top: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+	.album-cache {
+		display: none;
+	}
+	.Moitie {
+		display: none
+	}
+	.bleu,
+	.vert {
+		height: 150px;
+	}
+}
+
+img {
+	width: 100%;
+	height: 100%;
+}
+
+
+/********************************
+		
+				GESTION DISPLAY
+		
+********************************/
+
+#accueil,
+#decouvertes {
+	display: none;
+}
+.pageActive {
+	display: block;
 }
