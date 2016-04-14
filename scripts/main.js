@@ -120,10 +120,13 @@ $(document).ready(function () {
 
 	$("#new_playlist").click(function () {
 
-		$(".acc_playlist").prepend('<div id="playlist" > <div class="acc_ctrl" class="ui-state-default"><h2 contentEditable="true">New playlist</h2></div> <ul class="acc_panel"><li class="track"></li> </ul> </div>');
+		$(".acc_playlist").prepend('<div id="playlist" > <div class="acc_ctrl" class="ui-state-default"><i id="delete" class="fa fa-times" aria-hidden="true"></i><h2 contentEditable="true">New playlist</h2></div> <ul class="acc_panel"><li class="track"></li> </ul> </div>');
 		$('.acc_ctrl').off('click');
 		button_playlist();
 		playlist();
+		$("#delete").click(function(){
+		$(this).parent().remove();
+	});
 	});
 
 
@@ -147,6 +150,10 @@ $(document).ready(function () {
 		$(this).find(".artist").html(trackArtist);
 		$(this).find("img").attr('src', trackAlbum);
 		$(this).find("a").attr('data-src', trackLink);
+	});
+	
+	$("#delete, .track #delete").click(function(){
+		$(this).parent().remove();
 	});
 
 

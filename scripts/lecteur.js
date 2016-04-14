@@ -26,7 +26,7 @@
 		
 		********************************/
 		function load() {
-			
+
 			$('.trackList #playable, .historyList #playable	').click(function (e) {
 				e.preventDefault();
 				$(this).addClass('playing').siblings().removeClass('playing');
@@ -107,14 +107,18 @@
 
 		$("#coeur").click(function () {
 
-			$(".heart").prepend('<li id="playable" class="ui-state-default track"><a href="#" data-src=""> <img src=" "><span class="title"></span></br><span class="artist"></span></a></li>');
+			$(".heart").prepend('<li id="playable" class="ui-state-default track"><i id="delete" class="fa fa-times" aria-hidden="true"></i><a href="#" data-src=""> <img src=" "><span class="title"></span></br><span class="artist"></span></a></li>');
 
 			$(".heart li:first-child a").attr('data-src', link);
 			$(".heart li:first-child .title").html(title);
 			$(".heart li:first-child .artist").html(artist);
 
 			$(".heart li:first-child img").attr('src', album);
+			$("#delete, .track #delete").click(function () {
+				$(this).parent().remove();
+			});
 			load();
+
 		});
 
 	});

@@ -280,8 +280,13 @@ ul.tabs.active {
 
 .tabs_item .track {
 	padding: 2px 0;
-	background-color: #f6f6f6;
-	border-bottom: 1px #FFFFFF solid;
+	background-color: #1c1c23;
+	border-bottom: 1px #000000 solid;
+	color:#FFFFFF;
+}
+
+.tabs_item .track a span{
+	color:#FFFFFF;
 }
 
 .tabs_item .title {
@@ -308,6 +313,14 @@ ul.tabs.active {
 .current a {
 	color: #fff;
 	background: #007FEB;
+}
+
+.track #delete{
+	color: #909093;
+	float: right;
+	margin-right: 10px;
+	margin-top: 5px;
+	
 }
 
 
@@ -447,6 +460,15 @@ ul.tabs.active {
 	padding:20px 10px;
 }
 
+#delete{
+	color: #909093;
+	float: left;	
+}
+
+#delete:hover{
+	color: #FFFFFF;
+	
+}
 
 /******** PLAY BAR ********/
 
