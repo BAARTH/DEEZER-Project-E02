@@ -1,8 +1,4 @@
-/********************************
-		
-					GLOBAL
-		
-********************************/
+/******** GLOBAL ********/
 
 html,
 body {
@@ -16,11 +12,7 @@ body {
 }
 
 
-/********************************
-		
-					NAV BAR
-		
-********************************/
+/******** NAV BAR ********/
 
 #deezer-logo img {
 	width: 115px;
@@ -176,11 +168,7 @@ input[type=text] {
 }
 
 
-/********************************
-		
-					RIGHT BAR
-		
-********************************/
+/******** RIGHT BAR ********/
 
 #right-bar {
 	position: fixed;
@@ -204,11 +192,7 @@ input[type=text] {
 }
 
 
-/********************************
-		
-					MENU RIGHT BAR
-		
-********************************/
+/******** MENU RIGHT BAR ********/
 
 .tab {
 	margin-bottom: 20px;
@@ -301,11 +285,7 @@ ul.tabs.active {
 }
 
 
-/********************************
-		
-							PLAYLIST
-		
-********************************/
+/******** PLAYLIST RIGHT BAR ********/
 
 .acc h2 {
 	color: #C2C2CA;
@@ -437,11 +417,7 @@ ul.tabs.active {
 }
 
 
-/********************************
-		
-								PLAY BAR
-		
-		********************************/
+/******** PLAY BAR ********/
 
 #play-bar {
 	position: fixed;
@@ -573,12 +549,22 @@ ul.tabs.active {
 	top: 15px;
 }
 
+@media screen and (max-width:1024px) {
+	#play-bar {
+		height: 100px;
+	}
+	.audiojs {
+		left: 250px;
+		top: 50px;
+	}
+	.heartBtn {
+		left: 670px;
+		top: 65px;
+	}
+}
 
-/********************************
-		
-					HOME CONTENT
-		
-********************************/
+
+/******** HOME CONTENT ********/
 
 .container-fluid {
 	padding-right: 0;
@@ -595,11 +581,7 @@ ul.tabs.active {
 }
 
 
-/********************************
-		
-				PAGE ACCUEIL
-		
-********************************/
+/******** PAGE ACCUEIL ********/
 
 #accueil {
 	margin-bottom: 25px;
@@ -819,11 +801,7 @@ ul.tabs.active {
 }
 
 
-/********************************
-		
-				PAGE DECOUVERTE
-		
-********************************/
+/******** PAGE DECOUVERTES ********/
 
 #decouvertes header {
 	height: 200px;
@@ -917,11 +895,7 @@ ul.tabs.active {
 }
 
 
-/********************************
-		
-				PAGE MIX
-		
-********************************/
+/******** PAGE MIX ********/
 
 #mix {
 	margin-bottom: 40px;
@@ -1065,11 +1039,7 @@ ul.tabs.active {
 }
 
 
-/********************************
-		
-				PAGE MIX
-		
-********************************/
+/******** PAGE AMBIANCE ********/
 
 #ambiance {
 	margin-bottom: 40px;
@@ -1214,11 +1184,7 @@ ul.tabs.active {
 }
 
 
-/********************************
-		
-				PAGE PROFIL
-		
-********************************/
+/******** PAGE PROFIL ********/
 
 #profil header {
 	background-image: url(../images/background.jpg);
@@ -1441,11 +1407,7 @@ ul.tabs.active {
 }
 
 
-/********************************
-		
-				PAGE NOUVEAUTES
-		
-********************************/
+/******** PAGE NOUVEAUTES ********/
 
 #nouveautes {
 	margin-bottom: 70px;
@@ -1600,11 +1562,7 @@ ul.tabs.active {
 }
 
 
-/********************************
-		
-				PAGE TOP
-		
-********************************/
+/******** PAGE TOP ********/
 
 #top header {
 	height: 200px;
@@ -1686,16 +1644,12 @@ ul.tabs.active {
 	height: 80px;
 }
 
-#top .slider img{
+#top .slider img {
 	height: 120px;
 }
 
 
-/********************************
-		
-				GESTION DISPLAY
-		
-********************************/
+/******** GESTION DISPLAY ********/
 
 #accueil,
 #decouvertes,

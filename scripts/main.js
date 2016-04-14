@@ -1,8 +1,13 @@
 $(document).ready(function () {
 
 
+	/******** BOUTON PROFIL ********/
+
 	$("#user-interface").hide();
 	$("#user-button, #user-profile").click(
+
+
+		/******** BOUTON RIGHT BAR ********/
 
 		function () {
 			$("#user-interface").slideToggle();
@@ -12,8 +17,6 @@ $(document).ready(function () {
 	var boxWidth = $("#right-bar").width();
 	$("#right-bar").width(0);
 	$("#content").css("margin-right", 0);
-
-
 	$("#toggleButton-right").click(function () {
 
 
@@ -36,10 +39,8 @@ $(document).ready(function () {
 		}
 	});
 
-	/* AUDIO */
 
-
-	/* GESTIONNAIRE TAB */
+	/******** GESTION MENU ********/
 
 	(function ($) {
 		$('.tab ul.tabs').addClass('active').find('> li:eq(0)').addClass('current');
@@ -79,7 +80,8 @@ $(document).ready(function () {
 
 	button_playlist();
 
-	/* GESTIONNAIRE DE PLAYLIST */
+
+	/******** GESTION MENU ********/
 	function playlist() {
 		$(function () {
 
@@ -125,21 +127,15 @@ $(document).ready(function () {
 	});
 
 
-	/********************************
-			
-		GENERATION ALAEATOIRE VIA JSON
-			
-	********************************/
+	/******** GENERATION ALAEATOIRE VIA JSON ********/
 
 	var trackData = track.tracks.data;
-
 	var nombre1 = Math.floor(Math.random() * trackData.length);
 	var numberOfTrack = $(".track");
 	var trackLink = trackData[nombre1].preview;
 	var trackAlbum = trackData[nombre1].album;
 	var trackTitle = trackData[nombre1].title;
 	var trackArtist = trackData[nombre1].artist.name;
-
 	$("li#playable").each(function () {
 		nombre1 = Math.floor(Math.random() * trackData.length);
 		numberOfTrack = $(".track")
@@ -154,13 +150,8 @@ $(document).ready(function () {
 	});
 
 
+	/******** GESTION DISPLAY ********/
 
-
-	/********************************
-			
-					GESTION DISPLAY
-			
-	********************************/
 	$("#accueil").addClass("pageActive");
 	$(".pageActive").show();
 	$(".nouv-image-titre").each(function () {
@@ -173,8 +164,6 @@ $(document).ready(function () {
 		$(this).find(".artist").html(trackArtist);
 		$(this).find("img").attr('src', trackAlbum);
 	});
-
-
 	$(".menuAccueil").click(function (e) {
 		e.preventDefault;
 		$(".nouv-image-titre").each(function () {
@@ -192,7 +181,6 @@ $(document).ready(function () {
 		$("#accueil").addClass("pageActive");
 		$(".pageActive").show();
 	});
-
 	$(".menuDiscover").click(function (e) {
 		e.preventDefault;
 		$("#decouvertes .block").each(function () {
@@ -208,7 +196,6 @@ $(document).ready(function () {
 		$("#decouvertes").addClass("pageActive");
 		$(".pageActive").show();
 	});
-
 	$(".menuMix").click(function (e) {
 		e.preventDefault;
 		$(".pageActive").hide();
@@ -216,7 +203,6 @@ $(document).ready(function () {
 		$("#mix").addClass("pageActive");
 		$(".pageActive").show();
 	});
-
 	$(".menuProfil").click(function (e) {
 		e.preventDefault;
 		$(".nouv-image-titre").each(function () {
@@ -233,7 +219,6 @@ $(document).ready(function () {
 		$("#profil").addClass("pageActive");
 		$(".pageActive").show();
 	});
-
 	$(".menuAmbiance").click(function (e) {
 		e.preventDefault;
 		$(".pageActive").hide();
@@ -241,7 +226,6 @@ $(document).ready(function () {
 		$("#ambiance").addClass("pageActive");
 		$(".pageActive").show();
 	});
-
 	$(".menuNew").click(function (e) {
 		e.preventDefault;
 		$(".album-button-hover").each(function () {
@@ -259,7 +243,6 @@ $(document).ready(function () {
 		$("#nouveautes").addClass("pageActive");
 		$(".pageActive").show();
 	});
-
 	$(".menuTop").click(function (e) {
 		e.preventDefault;
 		$(".topTrack").each(function () {
@@ -282,11 +265,8 @@ $(document).ready(function () {
 
 
 
-	/********************************
-				
-			GESTION DISPLAY PAGE PROFIL
-				
-		********************************/
+	/******** GESTION DISPLAY PAGE PROFIL ********/
+
 	$('#onglet-album, .menuAlbum').on('click', function () {
 		$('.profil-content').removeClass('profil-active');
 		$('.albums-profil').addClass('profil-active');
@@ -311,6 +291,9 @@ $(document).ready(function () {
 		$('.profil-content').removeClass('profil-active');
 		$('.artistes-profil').addClass('profil-active');
 	});
+
+	
+	/******** CAROUSEL ********/
 
 	$(function ($) {
 
@@ -342,9 +325,6 @@ $(document).ready(function () {
 		);
 
 	});
-
-	//******** CAROUSEL********//
-
 	$('.carousel-control').on('click', function (e) {
 		e.preventDefault();
 		console.log('click');
