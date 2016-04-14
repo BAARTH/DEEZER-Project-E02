@@ -15,8 +15,8 @@ $(document).ready(function () {
 
 		});
 	var boxWidth = $("#right-bar").width();
-	$("#right-bar").width(0);
-	$("#content").css("margin-right", 0);
+	$("#right-bar").addClass("active");
+	$("#content").css("margin-right", boxWidth);
 	$("#toggleButton-right").click(function () {
 
 
